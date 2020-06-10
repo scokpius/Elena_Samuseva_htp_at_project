@@ -5,7 +5,7 @@ import drivers.Driver;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
-public class BaseSteps {
+public class InitCloseDriverSteps {
     @BeforeClass
     public static void initDriver(){
         Driver.initDriver(ConfigDriver.CHROME);

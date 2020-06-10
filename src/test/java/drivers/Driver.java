@@ -26,9 +26,8 @@ public class Driver {
         }
         return driver;
     }
-    public static void goToSite () {
-        String url = ConfigProperties.read("URL");
-       // driver.navigate().to(url);
+    public static void goToSite (String url) {
+        //driver.navigate().to(url);
         driver.get(url);
     }
 
@@ -73,6 +72,18 @@ public class Driver {
 
     }
 
+    public static String getElementAttributeHref(WebElement element){
+        return (String) ((JavascriptExecutor)driver).executeScript(
+                "return arguments[0].getAttribute('href')", element);
+
+
+    }
+
+    public static void clickElement(WebElement element){
+        ((JavascriptExecutor)driver).executeScript(
+                String.format("arguments[0].click()"), element);
+
+    }
 /*
      // parametrized WebDriver singleton for multithreading
      public class Driver {

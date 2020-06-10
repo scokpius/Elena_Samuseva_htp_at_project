@@ -12,6 +12,9 @@ public class ConfigProperties {
     public static void setPathTestData(String fileName) {
         ConfigProperties.pathTestData = GetPath.getPathTestData(fileName);
     }
+    public static void setPathProperties(String fileName) {
+        ConfigProperties.pathTestData = GetPath.getPathProperties(fileName);
+    }
 
     public static String read(String key){
         try (FileInputStream file = new FileInputStream(pathTestData)){
@@ -22,4 +25,6 @@ public class ConfigProperties {
         }
         return property.getProperty(key);
     }
+
+
 }

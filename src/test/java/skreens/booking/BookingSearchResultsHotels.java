@@ -6,19 +6,28 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import skreens.AbstractPage;
 
+import java.util.List;
+
 public class BookingSearchResultsHotels extends AbstractPage {
+
+//    @FindBy(how = How.XPATH, using = "//*[@id='hotellist_inner']//button[@aria-label='Этот вариант сохранен в 1 ваших списках']")
+//    private List<WebElement> heartRed_XPATH;
 
    private WebElement checkboxPriceMax_XPATH;
     private WebElement checkboxPriceMin_XPATH;
     private WebElement sortingMin_XPATH;
     private WebElement priceOneFirstHotel_XPATH;
-   // private WebElement checkboxStars_XPATH = Driver.getDriver().findElement(By.xpath("//*[@id='filter_class']"));
     private WebElement checkboxThreeStars_XPATH;
     private WebElement checkboxFourStars_XPATH;
-    private WebElement hotelTen_XPATH;
-    private WebElement nameTenHotel_XPATH;
+    private WebElement hotel_XPATH;
+    private WebElement nameHotel_XPATH;
+    private WebElement favoriteHotel_XPATH;
+    private WebElement heartRedFirst_XPATH;
+    private WebElement heartRedLast_XPATH;
 
     public BookingSearchResultsHotels(WebDriver webDriver) {
         super(webDriver);
@@ -55,8 +64,8 @@ public class BookingSearchResultsHotels extends AbstractPage {
         checkboxFourStars_XPATH = Driver.getDriver().findElement(By.xpath("//*[@id='filter_class']/div[2]/a[2]"));
         checkboxFourStars_XPATH.click();
     }
-    public WebElement selectHotelIOrder(String numberInOrder){
-        return hotelTen_XPATH = Driver.getDriver().findElement(
+    private WebElement selectHotelIOrder(String numberInOrder){
+        return hotel_XPATH = Driver.getDriver().findElement(
                 By.xpath(String.format("//*[@id='hotellist_inner']/div[@data-hotelid][%s]", numberInOrder)));
     }
 
@@ -67,8 +76,27 @@ public class BookingSearchResultsHotels extends AbstractPage {
         Driver.colorBackgroundElement(selectHotelIOrder(numberInOrder), color);
 
     }
+    public boolean selectHeartRed(){
+
+        heartRedFirst_XPATH = Driver.getDriver().findElement(By.xpath("//*[@id='hotellist_inner']/div[1]//button[@aria-label='Этот вариант сохранен в 1 ваших списках']"));
+        heartRedLast_XPATH  = Driver.getDriver().findElement(By.xpath("//*[@id='hotellist_inner']/div[26]//button[@aria-label='Этот вариант сохранен в 1 ваших списках']"));
+        String string = "Этот вариант сохранен в 1 ваших списках";
+        if ((heartRedFirst_XPATH.getAttribute("aria-label") == string) && (heartRedLast_XPATH.getAttribute("aria-label") == string)){
+            return true;
+        }
+        else return false;
+//        return heartRed_XPATH.isDisplayed();
+    }
+
+    public void selectFavoriteHotel(String numberInOrder){
+        sсrollHotel(numberInOrder);
+        favoriteHotel_XPATH = Driver.getDriver().findElement(
+                By.xpath(String.format("//*[@id='hotellist_inner']/div[@data-hotelid][%s]//button", numberInOrder)));
+        favoriteHotel_XPATH.click();
+
+    }
     public WebElement selectNameHotel(String numberInOrder){
-        return nameTenHotel_XPATH = Driver.getDriver().findElement(
+        return nameHotel_XPATH = Driver.getDriver().findElement(
                 By.xpath(String.format("//*[@id='hotellist_inner']/div[@data-hotelid][%s]//span[@data-et-click]", numberInOrder)));
     }
 
