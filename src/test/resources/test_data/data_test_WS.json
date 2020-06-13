@@ -1,0 +1,22 @@
+[
+  {
+    "user": "",
+    "strict": true
+  },
+  {
+    "user": "a",
+    "strict": false
+  },
+  {
+    "user": "berta",
+    "strict": true
+  },
+  {
+    "user": "jo",
+    "strict": false
+  },
+  {
+    "user": "simon",
+    "strict": true
+  }
+]

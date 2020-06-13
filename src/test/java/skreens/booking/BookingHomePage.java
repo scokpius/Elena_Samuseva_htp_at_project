@@ -32,7 +32,7 @@ public class BookingHomePage extends AbstractPage {
     public WebElement buttonClosePopUpWindow_XPATH;
     @FindBy(xpath = "//*[@id='b2mysettingsPage']/div[9]/div/div")
     public WebElement bannerConfirmation_XPATH;
-    public BookingBannerBlock bookingBannerBlock = new BookingBannerBlock(Driver.getDriver());
+    public BookingBannerBlock bannerBlock = new BookingBannerBlock(Driver.getDriver());
 
     public BookingHomePage(WebDriver webDriver) {
         super(webDriver);

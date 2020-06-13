@@ -43,21 +43,21 @@ public class BookingCreateNewUserSteps extends InitCloseDriverSteps {
     public void CreateNewUser() throws InterruptedException {
         Driver.goToSite(URL.BOOKING);
         bookingHomePage = new BookingHomePage(Driver.getDriver());
-        bookingHomePage.bookingBannerBlock.buttonAccountCreate_ID.click();
+        bookingHomePage.bannerBlock.buttonAccountCreate_ID.click();
         bookingAccountCreatePage = new BookingAccountPage(Driver.getDriver());
         bookingAccountCreatePage.setEmailAddressCreate(disposableEmail);
         passwordBooking = randomPassword(19);
         bookingAccountCreatePage.setPasswordCreate(passwordBooking);
         bookingHomePage.buttonClosePopUpWindow_XPATH.click();
-        bookingHomePage.bookingBannerBlock.notifications_XPATH.click();
-        bookingHomePage.bookingBannerBlock.activationLetter_CSS.click();
+        bookingHomePage.bannerBlock.notifications_XPATH.click();
+        bookingHomePage.bannerBlock.activationLetter_CSS.click();
         new OpenMyGMailSteps().OpenAndFindEmailMyGMail(ConfigProperties.read("GMAIL_USERNAME"),
                 ConfigProperties.read("GMAIL_PASSWORD"));
         ArrayList<String> windowHandles = new ArrayList<String>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(windowHandles.get(2));
-        bookingAccountPage = new BookingAccountPage(Driver.getDriver());
+     //   bookingAccountPage = new BookingAccountPage(Driver.getDriver());
         bookingHomePage = new BookingHomePage(Driver.getDriver());
-        bookingHomePage.bookingBannerBlock.notifications_XPATH.click();
+      //  bookingHomePage.bannerBlock.notifications_XPATH.click();
         String resultFile = GetPath.getPathProperties("login_password_Boking.txt");
         WriteReadFail.writerToFile(resultFile, disposableEmail, passwordBooking);
         Assert.assertTrue("Account not activated", bookingHomePage.bannerConfirmation_XPATH.isDisplayed());
@@ -67,7 +67,7 @@ public class BookingCreateNewUserSteps extends InitCloseDriverSteps {
         trashMailHomePage.sendInTrashMail(login, password);
         trashMailAddressManagerPage.AddButton_ID.click();
         trashMailAddressManagerPage.SaveButton_ID.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         return trashMailAddressManagerPage.getDisposableDomain();
     }
 
