@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import settings.ConfigProperties;
 import skreens.trashmail.TrashMailHomePage;
-import steps.InitCloseDriverSteps;
+import steps.base_steps.InitCloseDriverSteps;
 
 public class TrashMailUserCreateSteps extends InitCloseDriverSteps {
 

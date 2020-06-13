@@ -73,7 +73,7 @@ public class BookingSearchResultsHotelsPage extends AbstractPage {
     }
 
     public int getSizeListHotel(){
-        return listHotell.size();
+         return listHotell.size();
     }
 
 

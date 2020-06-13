@@ -1,4 +1,4 @@
-package steps;
+package steps.base_steps;
 
 import drivers.Driver;
 import drivers.URL;
@@ -8,7 +8,7 @@ import skreens.gmail.GMailMyPage;
 
 import java.util.ArrayList;
 
-public class OpenMyGMailSteps /*extends InitCloseDriverSteps*/ {
+public class OpenMyGMailSteps {
     private GMailHomePage gMailHomePage;
     private GMailAccountPage gMailAccountPage;
     private GMailMyPage gMailMyPage;
@@ -26,7 +26,6 @@ public class OpenMyGMailSteps /*extends InitCloseDriverSteps*/ {
         gMailMyPage.confirmationBooking();
 
     }
-
     private void loginGMail(String login, String password) {
         gMailAccountPage = new GMailAccountPage(Driver.getDriver());
         gMailAccountPage.setLoginGMail(login);

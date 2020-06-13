@@ -73,15 +73,5 @@ public class BookingParisMoscowOsloSteps /*extends InitCloseDriverSteps*/{
                 bookingHotels.selectNameHotel(10).getAttribute("style"));
     }
 
-//    public void enteringSearchData(String city, int date_in, int difference, int adults, int children, int rooms) throws InterruptedException {
-//        bookingHomePage.selectCity(city);
-//        if (bookingHomePage.calendar_XPATH.isDisplayed() == false){
-//             bookingHomePage.clickCheckInOut();
-//        }
-//        bookingHomePage.selectDateInOut(date_in, difference);
-//        bookingHomePage.selectAdultsChildrenRooms();
-//        bookingHomePage.setAdultsChildrenRoomsValue(adults, children, rooms);
-//        bookingHomePage.clickButtonSearch();
-//    }
 
 }

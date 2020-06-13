@@ -1,4 +1,4 @@
-package tests;
+package runners.junit4;
 
 import drivers.ConfigDriver;
 import drivers.Driver;
@@ -6,13 +6,11 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import steps.BookingMoscowSteps;
-import steps.BookingOsloSteps;
-import steps.BookingParisSteps;
+import steps.booking.BookingParisMoscowOsloSteps;
 
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({BookingParisSteps.class, BookingOsloSteps.class, BookingMoscowSteps.class})
+@Suite.SuiteClasses({BookingParisMoscowOsloSteps.class})
 public class JUnitRunnerTest {
     @BeforeClass
     public static void initDriver(){
@@ -22,5 +20,6 @@ public class JUnitRunnerTest {
     }
     @AfterClass
     public static void closeDriver(){
-        Driver.destroy();}
+        Driver.destroy();
+    }
 }

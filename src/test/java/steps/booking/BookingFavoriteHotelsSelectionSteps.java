@@ -11,7 +11,8 @@ import skreens.booking.BookingAccountPage;
 import skreens.booking.BookingFavoriteHotelsPage;
 import skreens.booking.BookingHomePage;
 import skreens.booking.BookingSearchResultsHotelsPage;
-import steps.InitCloseDriverSteps;
+import steps.base_steps.BookingLoginPasswordSteps;
+import steps.base_steps.InitCloseDriverSteps;
 import utility.JsonParser;
 import utility.WriteReadFail;
 
@@ -21,7 +22,6 @@ import java.util.List;
 
 public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
     private BookingHomePage bookingHomePage;
-    private BookingAccountPage bookingAccountPage;
     private BookingSearchResultsHotelsPage bookingHotels;
     private BookingFavoriteHotelsPage bookingFavoriteHotels;
     private List<City> city;
@@ -30,7 +30,6 @@ public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
     public void properties() throws IOException {
         Driver.goToSite(URL.BOOKING);
         bookingHomePage = new BookingHomePage(Driver.getDriver());
-        bookingAccountPage = new BookingAccountPage(Driver.getDriver());
         bookingHotels = new BookingSearchResultsHotelsPage(Driver.getDriver());
         bookingFavoriteHotels = new BookingFavoriteHotelsPage(Driver.getDriver());
         city = JsonParser.parseGSONCity(GetPath.getPathTestData("data_test_city.json"));
@@ -38,7 +37,7 @@ public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
 
     @Test
     public void BookingFavoriteHotelsSelection() throws InterruptedException {
-        currentAccount();
+        BookingLoginPasswordSteps.currentAccount(bookingHomePage);
         bookingHomePage.enteringSearchData(city.get(3).city, city.get(3).date_in, city.get(3).difference,
                 city.get(3).adults, city.get(3).children, city.get(3).rooms);
         Thread.sleep(5000);
@@ -53,11 +52,11 @@ public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
         bookingHotels.bannerBlock.buttonCurrentAccount_ID.click();
         bookingHotels.bannerBlock.accountFavorites_XPATH.click();
         Driver.setTimeouts();
-        int count = hotelPresenceOnLlist(listNameFavoriteHotels);
+        int count = hotelPresenceOnList(listNameFavoriteHotels);
         Assert.assertTrue("Not all hotels listed.", count == 2);
     }
 
-    private int hotelPresenceOnLlist(List<String> listNameFavoriteHotels) {
+    private int hotelPresenceOnList(List<String> listNameFavoriteHotels) {
         int count = 0;
         for (int i = 0; i < listNameFavoriteHotels.size(); i++) {
             for (int j = 0; j < bookingFavoriteHotels.getlistNameHotels().size(); j++) {
@@ -69,12 +68,12 @@ public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
         return count;
     }
 
-    private void currentAccount() {
-        bookingHomePage.bannerBlock.buttonCurrentAccount_ID.click();
-        String resultFile = GetPath.getPathProperties("login_password_Boking.txt");
-        String[] loginPassword = WriteReadFail.readInFileToStringBuilder(resultFile).split(" ");
-        bookingAccountPage.setCurrentLoginPassword(loginPassword[0], loginPassword[1]);
-    }
+//    private void currentAccount() {
+//        bookingHomePage.bannerBlock.buttonCurrentAccount_ID.click();
+//        String resultFile = GetPath.getPathProperties("login_password_Boking.txt");
+//        String[] loginPassword = WriteReadFail.readInFileToStringBuilder(resultFile).split(" ");
+//        bookingAccountPage.setCurrentLoginPassword(loginPassword[0], loginPassword[1]);
+//    }
 
 
 }

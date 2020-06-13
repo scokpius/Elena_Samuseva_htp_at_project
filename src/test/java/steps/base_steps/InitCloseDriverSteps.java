@@ -1,4 +1,4 @@
-package steps;
+package steps.base_steps;
 
 import drivers.ConfigDriver;
 import drivers.Driver;
