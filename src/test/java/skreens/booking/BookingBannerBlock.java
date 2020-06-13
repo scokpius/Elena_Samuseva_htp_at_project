@@ -19,11 +19,10 @@ public class BookingBannerBlock extends AbstractPage {
     @FindBy(id = "notifications-list") //*[@id="notifications-list"]
     public WebElement notificationsList_ID;
     @FindBy(xpath = "//*[@data-type='confirm_primary_email']/div/a")
-   // @FindBy(css = "li[data-type='confirm_primary_email'] div a") //*[@id="notification-5079481643"]/a
-    public WebElement activationLetter_CSS;
-    @FindBy(id = "//*[@data-title='Центр поддержки клиентов']")
+    public WebElement activationLetter_XPATH;
+    @FindBy(xpath = "//li//*[@data-title='Центр поддержки клиентов']")
     public WebElement customerSupportCenter_XPATH;
-    @FindBy(id = "add_property_topbar ")
+    @FindBy(id = "add_property_topbar")
     public WebElement buttonRegisterObject_ID;
     @FindBy(id = "current_account_create")
     public WebElement buttonAccountCreate_ID;
