@@ -1,6 +1,10 @@
 [
   {
-    "user": "",
+    "user": "a",
+    "strict": true
+  },
+  {
+    "user": "berta",
     "strict": true
   },
   {
@@ -8,15 +12,11 @@
     "strict": false
   },
   {
-    "user": "berta",
-    "strict": true
-  },
-  {
-    "user": "jo",
+    "user": "sim",
     "strict": false
   },
   {
-    "user": "simon",
+    "user": "",
     "strict": true
   }
 ]
