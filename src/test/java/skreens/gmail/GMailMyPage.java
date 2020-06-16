@@ -1,6 +1,8 @@
 package skreens.gmail;
 
 import drivers.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,16 +16,15 @@ public class GMailMyPage extends AbstractPage {
 
     @FindBy(xpath  = "//*[@class='Cp']//tr[1]")
     public WebElement firstEmail_XPATH;
-
     @FindBy(how = How.XPATH, using = "//div[@role='listitem']")
     private List<WebElement> mailList;
+
+    private static final Logger LOGGER = LogManager.getLogger(GMailMyPage.class);
 
     public GMailMyPage(WebDriver webDriver) {
         super(webDriver);
     }
-    public int getMailList() {
-        return mailList.size();
-    }
+
     public void confirmationBooking () throws InterruptedException {
         WebElement emailСonfirmation_XPATH = Driver.getDriver().findElement(
                 By.xpath(String.format("//div[@role='listitem'][%d]", mailList.size())));
@@ -34,6 +35,7 @@ public class GMailMyPage extends AbstractPage {
                 String.format("//div[@role='listitem'][%d]//div[@class='gs']/div[3]//table[2]//table//tr[4]//a//a", mailList.size())));
         Driver.setTimeouts();
         buttonСonfirmation1_XPATH.click();
+        LOGGER.debug("Confirmation of registration on booking.com.");
     }
 
 

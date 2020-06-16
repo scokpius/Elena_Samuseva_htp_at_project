@@ -42,6 +42,8 @@ public class BookingBannerBlock extends AbstractPage {
     public WebElement taxiTab_XPATH;
     @FindBy(xpath = "//*[@id='profile-menu']/div[7]/a")
     public WebElement accountFavorites_XPATH;
+    @FindBy(xpath = "//*[@id='profile-menu']//input[@type='submit']")
+    public WebElement buttonExit_XPATH;
 
 
     public BookingBannerBlock(WebDriver webDriver) {

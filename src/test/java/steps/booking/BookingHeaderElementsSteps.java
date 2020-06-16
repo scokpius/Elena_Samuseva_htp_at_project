@@ -2,6 +2,9 @@ package steps.booking;
 
 import drivers.Driver;
 import drivers.URL;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,21 +14,21 @@ import steps.base_steps.BookingLoginPasswordSteps;
 import steps.base_steps.InitCloseDriverSteps;
 
 
-import java.util.NoSuchElementException;
-
-public class BookingHeaderElementsSteps extends InitCloseDriverSteps {
+public class BookingHeaderElementsSteps /*extends InitCloseDriverSteps */{
     private BookingHomePage bookingHomePage;
+
+    private static final Logger LOGGER = LogManager.getLogger(BookingHeaderElementsSteps.class);
 
     @Before
     public void properties(){
+        LOGGER.info("---------------------------Test started---------------------------");
         Driver.goToSite(URL.BOOKING);
         bookingHomePage = new BookingHomePage(Driver.getDriver());
     }
 
     @Test
-    public void BookingHeaderElements() throws InterruptedException {
+    public void BookingHeaderElements(){
         BookingLoginPasswordSteps.currentAccount(bookingHomePage);
-
         checkIfTheItemIsDisplayed(bookingHomePage.bannerBlock.blueBannerFirst_ID, "blueBannerFirst_ID");
         checkIfTheItemIsDisplayed(bookingHomePage.bannerBlock.stringBookingCom_ID, "stringBookingCom_ID");
         checkIfTheItemIsDisplayed(bookingHomePage.bannerBlock.currencySelection_XPATH, "currencySelection_XPATH");
@@ -47,10 +50,16 @@ public class BookingHeaderElementsSteps extends InitCloseDriverSteps {
     public void checkIfTheItemIsDisplayed(WebElement element, String nameElement) {
         try{
             Assert.assertTrue(element.isDisplayed());
-            System.out.println( "This item was found on the page: " + nameElement+".");
+            LOGGER.debug( "This item was found on the page: " + nameElement+".");
 //        }catch (NoSuchElementException e){
         }catch (Exception e){
-            System.err.println( "This item was not found on the page: " + nameElement+".");
+            LOGGER.debug( "This item was not found on the page: " + nameElement+".");
         }
+    }
+
+    @After
+    public void finished(){
+        BookingLoginPasswordSteps.signOut(bookingHomePage);
+        LOGGER.info("---------------------------Test finished--------------------------");
     }
 }

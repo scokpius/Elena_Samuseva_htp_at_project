@@ -3,6 +3,9 @@ package steps.booking;
 import drivers.Driver;
 import drivers.URL;
 import object.City;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,14 +23,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
+public class BookingFavoriteHotelsSelectionSteps /*extends InitCloseDriverSteps */{
     private BookingHomePage bookingHomePage;
     private BookingSearchResultsHotelsPage bookingHotels;
     private BookingFavoriteHotelsPage bookingFavoriteHotels;
     private List<City> city;
 
+    private static final Logger LOGGER = LogManager.getLogger(BookingFavoriteHotelsSelectionSteps.class);
+
     @Before
     public void properties() throws IOException {
+        LOGGER.info("---------------------------Test started---------------------------");
         Driver.goToSite(URL.BOOKING);
         bookingHomePage = new BookingHomePage(Driver.getDriver());
         bookingHotels = new BookingSearchResultsHotelsPage(Driver.getDriver());
@@ -65,15 +71,13 @@ public class BookingFavoriteHotelsSelectionSteps extends InitCloseDriverSteps {
                 }
             }
         }
+        LOGGER.debug("Checking the availability of the hotel in the 'My next trip' list");
         return count;
     }
 
-//    private void currentAccount() {
-//        bookingHomePage.bannerBlock.buttonCurrentAccount_ID.click();
-//        String resultFile = GetPath.getPathProperties("login_password_Boking.txt");
-//        String[] loginPassword = WriteReadFail.readInFileToStringBuilder(resultFile).split(" ");
-//        bookingAccountPage.setCurrentLoginPassword(loginPassword[0], loginPassword[1]);
-//    }
-
-
+    @After
+    public void finished(){
+        BookingLoginPasswordSteps.signOut(bookingHomePage);
+        LOGGER.info("---------------------------Test finished--------------------------");
+    }
 }

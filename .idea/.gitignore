@@ -1,2 +1,4 @@
 # Default ignored files
 /workspace.xml
+chroedriver.exe
+selenium-server-standalone-3.141.59.jar

@@ -1,6 +1,8 @@
 package skreens.trashmail;
 
 import drivers.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,8 +16,7 @@ public class TrashMailHomePage extends AbstractPage {
     @FindBy(xpath = "//div[@class='alert ng-scope top am-fade alert-info']")
     private WebElement registrationMessage_XPATH;
 
-
-
+    private static final Logger LOGGER = LogManager.getLogger(TrashMailHomePage.class);
     private TrashMailAddressManagerBlock addressManager = new TrashMailAddressManagerBlock(Driver.getDriver());
     private TrashMailNewUserBlock newUser = new TrashMailNewUserBlock(Driver.getDriver());
 
@@ -23,6 +24,7 @@ public class TrashMailHomePage extends AbstractPage {
         super(webDriver);
     }
     public boolean registrationTextMessageIsDisplayed() {
+        LOGGER.debug("Presence of a message about successful registration at TrashMail.com.(registrationMessage_XPATH)");
         if(registrationMessage_XPATH.isDisplayed()) {
             return true;
         } else {

@@ -3,12 +3,16 @@ package steps.booking;
 import drivers.Driver;
 import drivers.URL;
 import object.City;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import settings.GetPath;
 import skreens.booking.BookingHomePage;
 import skreens.booking.BookingSearchResultsHotelsPage;
+import steps.base_steps.BookingLoginPasswordSteps;
 import utility.JsonParser;
 
 import java.io.IOException;
@@ -19,8 +23,11 @@ public class BookingParisMoscowOsloSteps /*extends InitCloseDriverSteps*/{
     private BookingSearchResultsHotelsPage bookingHotels;
     private List<City> city;
 
+    private static final Logger LOGGER = LogManager.getLogger(BookingParisMoscowOsloSteps .class);
+
     @Before
     public void properties() throws IOException {
+        LOGGER.info("---------------------------Test started---------------------------");
         Driver.goToSite(URL.BOOKING);
         bookingHomePage = new BookingHomePage(Driver.getDriver());
         bookingHotels = new BookingSearchResultsHotelsPage(Driver.getDriver());
@@ -73,5 +80,10 @@ public class BookingParisMoscowOsloSteps /*extends InitCloseDriverSteps*/{
                 bookingHotels.selectNameHotel(10).getAttribute("style"));
     }
 
+    @After
+    public void finished(){
+        LOGGER.info("---------------------------Test finished--------------------------");
+
+    }
 
 }

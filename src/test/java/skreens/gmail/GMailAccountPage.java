@@ -1,5 +1,7 @@
 package skreens.gmail;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,11 +17,7 @@ public class GMailAccountPage extends AbstractPage {
     @FindBy (id = "passwordNext")
     public WebElement buttonPassword_ID;
 
-
-//    <input type="password" class="whsOnd zHQkBf" jsname="YPqjbf" autocomplete="current-password" spellcheck="false" tabindex="0" aria-label="Введите пароль" name="password" autocapitalize="off" dir="ltr" data-initial-dir="ltr" data-initial-value="">
-//    <div jsname="YRMmle" class="AxOyFc snByac" aria-hidden="true">Введите пароль</div>
-
-
+    private static final Logger LOGGER = LogManager.getLogger(GMailAccountPage.class);
 
     public GMailAccountPage(WebDriver webDriver) {
         super(webDriver);
@@ -29,11 +27,13 @@ public class GMailAccountPage extends AbstractPage {
         loginGMail_ID.click();
         loginGMail_ID.clear();
         loginGMail_ID.sendKeys(email);
+        LOGGER.debug("Filling in the login field to enter the account.(loginGMail_ID)");
     }
 
     public void setPasswordGMail(String password){
         passwordGMail_ID.click();
         passwordGMail_ID.clear();
         passwordGMail_ID.sendKeys(password);
+        LOGGER.debug("Filling in the password field to enter the account.(loginGMail_ID)");
     }
 }

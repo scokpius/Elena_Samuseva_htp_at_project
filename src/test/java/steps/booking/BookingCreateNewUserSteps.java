@@ -2,6 +2,9 @@ package steps.booking;
 
 import drivers.Driver;
 import drivers.URL;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,14 +20,17 @@ import utility.WriteReadFail;
 
 import java.util.ArrayList;
 
-public class BookingCreateNewUserSteps extends InitCloseDriverSteps {
+public class BookingCreateNewUserSteps /*extends InitCloseDriverSteps*/{
     private TrashMailHomePage trashMailHomePage;
     private TrashMailAddressManagerPage trashMailAddressManagerPage;
     private BookingHomePage bookingHomePage;
     private String disposableEmail;
 
+    private static final Logger LOGGER = LogManager.getLogger(BookingCreateNewUserSteps.class);
+
     @Before
     public void properties() throws InterruptedException {
+        LOGGER.info("---------------------------Test started---------------------------");
         Driver.goToSite(URL.TRASHMAIL);
         trashMailHomePage = new TrashMailHomePage(Driver.getDriver());
         ConfigProperties.setPathProperties("propertie_login.properties");
@@ -52,12 +58,17 @@ public class BookingCreateNewUserSteps extends InitCloseDriverSteps {
     }
 
     public String  gettingDisposableEmailAddress(String login, String password) throws InterruptedException {
+        LOGGER.debug("Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)");
         trashMailHomePage.sendInTrashMail(login, password);
         trashMailAddressManagerPage.AddButton_ID.click();
         trashMailAddressManagerPage.SaveButton_ID.click();
         Thread.sleep(3000);
         return trashMailAddressManagerPage.getDisposableDomain();
     }
-
+    @After
+    public void finished(){
+        BookingLoginPasswordSteps.signOut(bookingHomePage);
+        LOGGER.info("---------------------------Test finished--------------------------");
+    }
 }
 
