@@ -1,0 +1,584 @@
+2020-06-16 03:16:52,314  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:16:57,356  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:16:57,373  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:17:07,417 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:17:07,909 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:17:08,014 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:17:08,103 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:17:12,420 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:17:14,421 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:17:14,421 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 03:17:20,166 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 03:17:25,269 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:17:30,323  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:17:30,323  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:17:39,015 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:17:39,272 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:17:39,647 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:17:39,759 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:17:39,828 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:17:44,337 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:17:46,460 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:17:46,460 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 03:17:51,638 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:17:56,687  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:17:56,688  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 03:17:57,725 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 03:17:58,781 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 03:18:04,608 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 03:18:11,437 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 03:18:12,823 DEBUG BookingAccountPage - Filling in the password fields and confirmed password to create an account.(password_ID, confirmedPassword_ID)
+2020-06-16 03:18:23,625 DEBUG GMailAccountPage - Filling in the login field to enter the account.(loginGMail_ID)
+2020-06-16 03:18:25,415 DEBUG GMailAccountPage - Filling in the password field to enter the account.(loginGMail_ID)
+2020-06-16 03:18:37,781 DEBUG GMailMyPage - Confirmation of registration on booking.com.
+2020-06-16 03:18:41,594  INFO BookingCreateNewUserSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:18:41,595  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 03:18:51,538  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:18:51,541  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 03:19:01,317  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:35:05,369  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:35:15,089 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:35:15,577 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:35:15,682 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:35:15,762 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:35:19,590 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:35:21,552 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 03:35:22,044 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 03:35:27,045 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:35:27,204 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:35:27,205 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:35:27,281 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 03:35:27,281 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:35:27,375 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 03:35:27,375 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:35:27,414  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:35:33,482  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:35:40,529 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:35:40,759 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:35:41,154 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:35:41,288 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:35:41,358 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:35:44,894 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:35:46,968 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:35:46,968 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 03:35:52,331 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 03:35:57,446 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:36:02,507  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:36:08,570  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:36:15,312 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:36:15,717 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:36:16,083 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:36:16,193 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:36:16,262 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:36:20,343 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:36:22,588 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:36:22,588 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 03:36:27,701 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:36:32,722  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:36:38,865  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 03:36:39,732 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 03:36:40,765 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 03:36:46,690 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 03:36:52,369 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 03:36:53,757 DEBUG BookingAccountPage - Filling in the password fields and confirmed password to create an account.(password_ID, confirmedPassword_ID)
+2020-06-16 03:37:04,339 DEBUG GMailAccountPage - Filling in the login field to enter the account.(loginGMail_ID)
+2020-06-16 03:37:05,931 DEBUG GMailAccountPage - Filling in the password field to enter the account.(loginGMail_ID)
+2020-06-16 03:37:23,828  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:37:29,069  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 03:37:39,107  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:37:42,918  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:37:42,921  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 03:37:49,374 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:37:52,656  INFO BookingHeaderElementsSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-16 03:37:53,554  INFO BookingHeaderElementsSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-16 03:37:53,737  INFO BookingHeaderElementsSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-16 03:37:53,791  INFO BookingHeaderElementsSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-16 03:37:53,836  INFO BookingHeaderElementsSteps - This item was found on the page: notifications_XPATH.
+2020-06-16 03:37:53,876  INFO BookingHeaderElementsSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-16 03:37:54,046  INFO BookingHeaderElementsSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-16 03:37:59,061  INFO BookingHeaderElementsSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-16 03:37:59,109  INFO BookingHeaderElementsSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-16 03:37:59,167  INFO BookingHeaderElementsSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-16 03:37:59,206  INFO BookingHeaderElementsSteps - This item was found on the page: housingTab_XPATH.
+2020-06-16 03:37:59,258  INFO BookingHeaderElementsSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-16 03:37:59,309  INFO BookingHeaderElementsSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-16 03:37:59,355  INFO BookingHeaderElementsSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-16 03:37:59,400  INFO BookingHeaderElementsSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-16 03:37:59,400  INFO BookingLoginPasswordSteps - ---------------------------Test started---------------------------
+2020-06-16 03:38:02,403  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:44:47,517  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:44:57,140 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:44:57,653 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:44:57,773 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:44:57,868 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:45:02,532 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:45:04,595 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 03:45:05,125 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 03:45:10,127 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:45:10,315 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:45:10,315 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:45:10,449 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 03:45:10,449 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:45:10,492 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 03:45:10,492 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:45:10,542  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:45:10,545  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:45:17,649 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:45:17,859 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:45:18,339 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:45:18,470 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:45:18,544 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:45:22,278 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:45:24,288 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:45:24,289 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 03:45:29,640 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 03:45:34,762 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:45:39,815  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:45:39,816  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:45:46,162 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:45:46,463 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:45:46,850 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:45:46,952 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:45:47,019 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:45:51,783 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:45:53,798 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:45:53,799 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 03:45:58,937 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:46:03,958  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:46:03,959  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 03:46:04,893 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 03:46:05,735 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 03:46:11,371 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 03:46:14,362  INFO BookingLoginPasswordSteps - Registration and login to the site account.
+2020-06-16 03:46:17,689 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 03:46:22,754  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:46:27,792  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 03:46:29,979  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:46:33,330 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:46:40,980 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:46:41,584 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:46:41,710 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:46:41,780 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:46:46,074 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:46:51,076 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-16 03:46:51,158 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:46:51,190 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:46:51,578 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:46:51,578 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:46:51,668 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:46:52,224 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:46:52,224 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:46:52,333 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:46:52,449 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:46:52,595 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:46:53,069 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:46:53,267 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:46:53,428 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:46:53,497 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:47:01,035 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 03:47:06,058 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 03:47:06,058 DEBUG BookingFavoriteHotelsSelectionSteps - Checking the availability of the hotel in the 'My next trip' list
+2020-06-16 03:47:06,058  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:47:08,361  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:47:08,364  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 03:47:10,819  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:47:14,766 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:47:18,576  INFO BookingHeaderElementsSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-16 03:47:20,276  INFO BookingHeaderElementsSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-16 03:47:20,368  INFO BookingHeaderElementsSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-16 03:47:20,413  INFO BookingHeaderElementsSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-16 03:47:20,459  INFO BookingHeaderElementsSteps - This item was found on the page: notifications_XPATH.
+2020-06-16 03:47:20,502  INFO BookingHeaderElementsSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-16 03:47:20,538  INFO BookingHeaderElementsSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-16 03:47:25,567  INFO BookingHeaderElementsSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-16 03:47:25,627  INFO BookingHeaderElementsSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-16 03:47:25,682  INFO BookingHeaderElementsSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-16 03:47:25,747  INFO BookingHeaderElementsSteps - This item was found on the page: housingTab_XPATH.
+2020-06-16 03:47:25,800  INFO BookingHeaderElementsSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-16 03:47:25,842  INFO BookingHeaderElementsSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-16 03:47:25,884  INFO BookingHeaderElementsSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-16 03:47:25,924  INFO BookingHeaderElementsSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-16 03:47:25,925  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:47:28,699  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:49:49,409  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:49:58,705 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:49:59,202 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:49:59,327 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:49:59,425 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:50:03,204 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:50:05,047 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 03:50:05,715 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 03:50:10,716 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:50:10,856 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:50:10,857 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:50:10,998 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 03:50:10,998 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:50:11,040 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 03:50:11,040 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:50:11,089  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:50:11,091  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:50:18,630 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:50:18,871 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:50:19,292 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:50:19,407 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:50:19,527 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:50:23,644 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:50:25,991 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:50:25,992 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 03:50:31,410 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 03:50:36,503 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:50:41,526  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:50:41,526  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:50:48,248 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:50:48,528 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:50:48,917 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:50:49,029 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:50:49,104 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:50:53,052 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:50:54,634 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:50:54,634 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 03:51:00,163 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:51:05,186  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:51:05,186  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 03:51:06,134 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 03:51:06,937 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 03:51:12,971 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 03:51:16,445  INFO BookingLoginPasswordSteps - Registration and login to the site account.
+2020-06-16 03:51:19,350 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 03:51:20,689 DEBUG BookingAccountPage - Filling in the password fields and confirmed password to create an account.(password_ID, confirmedPassword_ID)
+2020-06-16 03:51:31,434 DEBUG GMailAccountPage - Filling in the login field to enter the account.(loginGMail_ID)
+2020-06-16 03:51:33,261 DEBUG GMailAccountPage - Filling in the password field to enter the account.(loginGMail_ID)
+2020-06-16 03:51:46,266 DEBUG GMailMyPage - Confirmation of registration on booking.com.
+2020-06-16 03:51:49,645  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:51:54,010  INFO BookingCreateNewUserSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:51:54,011  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 03:51:58,196  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:52:01,555 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:52:08,856 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:52:09,414 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:52:09,537 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:52:09,615 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:52:14,531 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:52:19,531 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-16 03:52:19,679 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:52:19,819 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:52:20,262 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:52:20,263 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:52:20,464 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:52:20,878 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:52:20,879 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:52:21,066 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:52:21,163 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:52:21,228 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:52:21,266 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:52:21,358 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:52:21,385  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:52:26,932  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 03:52:29,389  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:52:35,968  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:52:39,371  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:56:36,625  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:56:45,019 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:56:45,523 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:56:45,651 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:56:45,745 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:56:49,672 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:56:51,782 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 03:56:52,210 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 03:56:57,211 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:56:57,286 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:56:57,286 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:56:57,404 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 03:56:57,404 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:56:57,473 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 03:56:57,474 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:56:57,529  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:56:57,531  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:57:03,017 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:57:03,232 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:57:03,632 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:57:03,731 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:57:03,797 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:57:07,780 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:57:09,690 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:57:09,691 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 03:57:15,193 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 03:57:20,262 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:57:25,285  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:57:25,286  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 03:57:31,258 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:57:31,559 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 03:57:31,954 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:57:32,095 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:57:32,166 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:57:35,673 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:57:38,010 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 03:57:38,011 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 03:57:43,430 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 03:57:48,452  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:57:48,453  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 03:57:49,718 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 03:57:50,716 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 03:57:58,076 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 03:58:00,410  INFO BookingLoginPasswordSteps - Registration and login to the site account.
+2020-06-16 03:58:03,563 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 03:58:08,613  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:58:13,651  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 03:58:15,704  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:58:19,096 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:58:26,623 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 03:58:27,197 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 03:58:27,360 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 03:58:27,434 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 03:58:31,756 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 03:58:36,757 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-16 03:58:36,823 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:58:36,852 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:58:37,168 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:58:37,168 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:58:37,232 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:58:37,772 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 03:58:37,772 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:58:37,943 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:58:38,090 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:58:38,157 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 03:58:38,425 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 03:58:38,610 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 03:58:38,746 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:58:38,944 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 03:58:43,098  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:58:45,136  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 03:58:45,141  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 03:58:47,310  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 03:58:50,273 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 03:58:53,858 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-16 03:58:54,937 DEBUG BookingHeaderElementsSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-16 03:58:55,153 DEBUG BookingHeaderElementsSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-16 03:58:55,216 DEBUG BookingHeaderElementsSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-16 03:58:55,419 DEBUG BookingHeaderElementsSteps - This item was found on the page: notifications_XPATH.
+2020-06-16 03:58:55,485 DEBUG BookingHeaderElementsSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-16 03:58:55,532 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-16 03:59:00,558 DEBUG BookingHeaderElementsSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-16 03:59:00,597 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-16 03:59:00,653 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-16 03:59:00,725 DEBUG BookingHeaderElementsSteps - This item was found on the page: housingTab_XPATH.
+2020-06-16 03:59:00,765 DEBUG BookingHeaderElementsSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-16 03:59:00,805 DEBUG BookingHeaderElementsSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-16 03:59:00,845 DEBUG BookingHeaderElementsSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-16 03:59:00,904 DEBUG BookingHeaderElementsSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-16 03:59:00,905  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 03:59:03,576  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 04:00:28,663  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 04:00:37,819 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 04:00:38,334 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 04:00:38,447 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 04:00:38,535 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 04:00:42,201 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 04:00:45,229 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 04:00:45,714 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 04:00:50,714 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:00:50,782 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 04:00:50,783 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:00:50,893 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 04:00:50,893 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 04:00:50,937 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 04:00:50,937 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 04:00:50,986  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 04:00:50,988  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 04:00:57,556 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 04:00:57,766 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 04:00:58,161 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 04:00:58,275 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 04:00:58,345 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 04:01:02,098 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 04:01:04,285 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 04:01:04,285 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 04:01:09,663 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 04:01:14,722 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 04:01:19,748  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 04:01:19,749  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 04:01:26,232 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 04:01:26,498 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 04:01:26,912 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 04:01:27,019 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 04:01:27,086 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 04:01:30,500 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 04:01:33,073 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 04:01:33,073 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 04:01:38,321 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 04:01:43,351  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 04:01:43,352  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 04:01:44,656 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 04:01:45,626 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 04:01:56,183  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 04:01:56,199  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 04:01:59,343  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 04:02:03,408 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 04:02:10,871 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 04:02:11,406 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 04:02:11,525 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 04:02:11,594 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 04:02:16,217 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 04:02:21,218 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-16 04:02:21,325 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:02:21,467 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 04:02:21,985 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 04:02:21,985 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:02:22,456 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 04:02:23,138 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 04:02:23,138 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:02:23,536 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 04:02:23,607 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 04:02:23,626 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 04:02:23,666 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 04:02:23,810 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 04:02:23,890 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 04:02:23,960 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 04:02:28,292 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:28,591 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:28,826 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:29,130 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:29,501 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:29,658 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:29,816 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:29,966 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,123 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,342 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,493 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,649 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,803 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:30,960 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:31,108 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:31,260 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:31,417 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:31,573 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 04:02:31,574 DEBUG BookingFavoriteHotelsSelectionSteps - Checking the availability of the hotel in the 'My next trip' list
+2020-06-16 04:02:31,574  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 04:02:33,659  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 04:02:33,660  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 04:02:36,266  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 04:02:39,712 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 04:02:42,855 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-16 04:02:43,715 DEBUG BookingHeaderElementsSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-16 04:02:44,037 DEBUG BookingHeaderElementsSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-16 04:02:44,080 DEBUG BookingHeaderElementsSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-16 04:02:44,210 DEBUG BookingHeaderElementsSteps - This item was found on the page: notifications_XPATH.
+2020-06-16 04:02:44,255 DEBUG BookingHeaderElementsSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-16 04:02:44,335 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-16 04:02:49,369 DEBUG BookingHeaderElementsSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-16 04:02:49,417 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-16 04:02:49,457 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-16 04:02:49,497 DEBUG BookingHeaderElementsSteps - This item was found on the page: housingTab_XPATH.
+2020-06-16 04:02:49,536 DEBUG BookingHeaderElementsSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-16 04:02:49,578 DEBUG BookingHeaderElementsSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-16 04:02:49,631 DEBUG BookingHeaderElementsSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-16 04:02:49,677 DEBUG BookingHeaderElementsSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-16 04:02:49,678  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 04:02:52,601  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:18:33,060  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 16:18:41,720 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 16:18:42,185 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 16:18:42,289 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 16:18:42,375 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 16:18:45,705 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 16:18:49,189 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-16 16:18:49,703 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-16 16:18:54,704 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:18:54,803 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 16:18:54,804 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:18:54,893 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-16 16:18:54,894 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 16:18:54,974 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-16 16:18:54,974 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 16:18:55,013  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:18:55,016  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 16:19:01,553 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 16:19:01,772 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 16:19:02,179 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 16:19:02,298 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 16:19:02,366 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 16:19:06,749 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 16:19:08,732 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-16 16:19:08,732 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-16 16:19:14,097 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-16 16:19:19,174 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 16:19:24,195  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:19:24,195  INFO BookingParisMoscowOsloSteps - ---------------------------Test started---------------------------
+2020-06-16 16:19:31,003 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 16:19:31,237 DEBUG BookingHomePage - Click on calendar.(checkInCheckOut_XPATH)
+2020-06-16 16:19:31,595 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 16:19:31,698 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 16:19:31,773 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 16:19:35,409 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 16:19:37,976 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-16 16:19:37,976 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-16 16:19:43,104 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-16 16:19:48,143  INFO BookingParisMoscowOsloSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:19:48,144  INFO BookingCreateNewUserSteps - ---------------------------Test started---------------------------
+2020-06-16 16:19:49,270 DEBUG BookingCreateNewUserSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-16 16:19:50,356 DEBUG TrashMailAddressManagerBlock - Filling in the user and password fields to enter the account.(userName_XPATH, password_XPATH)
+2020-06-16 16:19:55,904 DEBUG TrashMailAddressManagerPage - Get disposable domain.(disposable_XPATH, domain_XPATH)
+2020-06-16 16:19:58,817  INFO BookingLoginPasswordSteps - Registration and login to the site account.
+2020-06-16 16:20:01,873 DEBUG BookingAccountPage - Filling in the email field when creating an account.(emailAddress_ID)
+2020-06-16 16:20:03,328 DEBUG BookingAccountPage - Filling in the password fields and confirmed password to create an account.(password_ID, confirmedPassword_ID)
+2020-06-16 16:20:14,348 DEBUG GMailAccountPage - Filling in the login field to enter the account.(loginGMail_ID)
+2020-06-16 16:20:16,383 DEBUG GMailAccountPage - Filling in the password field to enter the account.(loginGMail_ID)
+2020-06-16 16:20:29,661 DEBUG GMailMyPage - Confirmation of registration on booking.com.
+2020-06-16 16:20:33,206  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 16:20:37,016  INFO BookingCreateNewUserSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:20:37,017  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test started---------------------------
+2020-06-16 16:20:39,219  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 16:20:43,628 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 16:20:51,098 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-16 16:20:51,568 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-16 16:20:51,696 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-16 16:20:51,760 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-16 16:20:55,966 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-16 16:21:00,967 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-16 16:21:01,043 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:21:01,073 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 16:21:01,371 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 16:21:01,371 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:21:01,532 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 16:21:01,904 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-16 16:21:01,905 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:21:02,079 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 16:21:02,162 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 16:21:02,259 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-16 16:21:02,410 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-16 16:21:02,481 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-16 16:21:02,566 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 16:21:02,701 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-16 16:21:06,905 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:06,991 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,164 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,251 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,334 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,433 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,527 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,719 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,811 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,890 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-16 16:21:07,891 DEBUG BookingFavoriteHotelsSelectionSteps - Checking the availability of the hotel in the 'My next trip' list
+2020-06-16 16:21:07,891  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 16:21:10,038  INFO BookingFavoriteHotelsSelectionSteps - ---------------------------Test finished--------------------------
+2020-06-16 16:21:10,038  INFO BookingHeaderElementsSteps - ---------------------------Test started---------------------------
+2020-06-16 16:21:12,949  INFO BookingLoginPasswordSteps - Login to the site account.
+2020-06-16 16:21:16,173 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-16 16:21:19,740 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-16 16:21:20,821 DEBUG BookingHeaderElementsSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-16 16:21:20,861 DEBUG BookingHeaderElementsSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-16 16:21:20,979 DEBUG BookingHeaderElementsSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-16 16:21:21,021 DEBUG BookingHeaderElementsSteps - This item was found on the page: notifications_XPATH.
+2020-06-16 16:21:21,084 DEBUG BookingHeaderElementsSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-16 16:21:21,134 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-16 16:21:26,178 DEBUG BookingHeaderElementsSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-16 16:21:26,226 DEBUG BookingHeaderElementsSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-16 16:21:26,261 DEBUG BookingHeaderElementsSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-16 16:21:26,299 DEBUG BookingHeaderElementsSteps - This item was found on the page: housingTab_XPATH.
+2020-06-16 16:21:26,338 DEBUG BookingHeaderElementsSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-16 16:21:26,373 DEBUG BookingHeaderElementsSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-16 16:21:26,412 DEBUG BookingHeaderElementsSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-16 16:21:26,464 DEBUG BookingHeaderElementsSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-16 16:21:26,464  INFO BookingLoginPasswordSteps - Log out of the site account.
+2020-06-16 16:21:29,347  INFO BookingHeaderElementsSteps - ---------------------------Test finished--------------------------

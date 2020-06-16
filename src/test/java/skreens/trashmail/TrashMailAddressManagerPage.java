@@ -1,5 +1,7 @@
 package skreens.trashmail;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,15 +18,16 @@ public class TrashMailAddressManagerPage extends AbstractPage{
     @FindBy (id = "fe-save-btnEl")
     public WebElement SaveButton_ID;
 
+    private static final Logger LOGGER = LogManager.getLogger(TrashMailAddressManagerPage.class);
 
     public TrashMailAddressManagerPage(WebDriver webDriver) {
         super(webDriver);
     }
 
-
     public String getDisposableDomain (){
         String disposable = disposable_XPATH.getText();
         String domain = domain_XPATH.getText();
+        LOGGER.debug("Get disposable domain.(disposable_XPATH, domain_XPATH)");
         return disposable+domain;
     }
 

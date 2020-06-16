@@ -1,6 +1,8 @@
 package skreens.booking;
 
 import drivers.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,6 +36,8 @@ public class BookingHomePage extends AbstractPage {
     public WebElement bannerConfirmation_XPATH;
     public BookingBannerBlock bannerBlock = new BookingBannerBlock(Driver.getDriver());
 
+    private static final Logger LOGGER = LogManager.getLogger(BookingHomePage.class);
+
     public BookingHomePage(WebDriver webDriver) {
         super(webDriver);
     }
@@ -44,6 +48,7 @@ public class BookingHomePage extends AbstractPage {
         city_ID.click();
         Thread.sleep(2000);
         citySearch_XPATH.click();
+        LOGGER.debug("Choosing a city to travel.(city_ID, citySearch_XPATH)");
     }
 
     public void clickCheckInOut() {
@@ -54,7 +59,7 @@ public class BookingHomePage extends AbstractPage {
         if (dateToday_XPATH.isDisplayed() == false) {
             checkMonth_XPATH.click();
         }
-
+        LOGGER.debug("Click on calendar.(checkInCheckOut_XPATH)");
     }
 
     private void selectDateInOut(int dateIn, int difference) {
@@ -66,16 +71,19 @@ public class BookingHomePage extends AbstractPage {
         String dateCheckOut = "//*[@class='bui-calendar']//td[@data-date='" + DetermineDate.getDetermineDate() + "']";
         WebElement dateCheckOut_XPATH = Driver.getDriver().findElement(By.xpath(dateCheckOut));
         dateCheckOut_XPATH.click();
+        LOGGER.debug("Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)");
     }
 
     private void selectAdultsChildrenRooms() {
         adultsChildrenRooms_XPATH.click();
+        LOGGER.debug("Click on adults children rooms.(adultsChildrenRooms_XPATH)");
     }
 
     private void setAdultsChildrenRoomsValue(int adults, int children, int rooms) {
         Driver.setElementAttributeValue(accomodationInput.get(0), adults);
         Driver.setElementAttributeValue(accomodationInput.get(1), children);
         Driver.setElementAttributeValue(accomodationInput.get(2), rooms);
+        LOGGER.debug("Record the number of people, number of children and number of rooms.(accomodationInput)");
     }
 
     public void enteringSearchData(String city, int date_in, int difference, int adults, int children, int rooms) throws InterruptedException {
@@ -87,6 +95,7 @@ public class BookingHomePage extends AbstractPage {
         selectAdultsChildrenRooms();
         setAdultsChildrenRoomsValue(adults, children, rooms);
         searchButton_XPATH.click();
+        LOGGER.debug("Fill in the search data and click the search button.(accomodationInput)");
     }
 
 }

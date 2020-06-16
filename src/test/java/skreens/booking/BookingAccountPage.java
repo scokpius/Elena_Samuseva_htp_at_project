@@ -1,6 +1,8 @@
 package skreens.booking;
 
 import drivers.Driver;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,11 +15,12 @@ public class BookingAccountPage extends AbstractPage {
     private WebElement email_ID;
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement button_XPATH;
-//    private WebElement buttonGetStarted_XPATH;
     @FindBy(id = "password")
     private WebElement password_ID;
     @FindBy(id = "confirmed_password")
     private WebElement confirmedPassword_ID;
+
+    private static final Logger LOGGER = LogManager.getLogger(BookingAccountPage.class);
 
 
     public BookingAccountPage(WebDriver webDriver) {
@@ -28,6 +31,7 @@ public class BookingAccountPage extends AbstractPage {
         emailAddress_ID.clear();
         emailAddress_ID.sendKeys(email);
         button_XPATH.click();
+        LOGGER.debug("Filling in the email field when creating an account.(emailAddress_ID)");
     }
 
     public void setPasswordCreate(String password){
@@ -36,6 +40,7 @@ public class BookingAccountPage extends AbstractPage {
         confirmedPassword_ID.clear();
         confirmedPassword_ID.sendKeys(password);
         button_XPATH.click();
+        LOGGER.debug("Filling in the password fields and confirmed password to create an account.(password_ID, confirmedPassword_ID)");
     }
 
     public void setCurrentLoginPassword(String email, String password){
@@ -43,9 +48,9 @@ public class BookingAccountPage extends AbstractPage {
         email_ID.clear();
         email_ID.sendKeys(email);
         button_XPATH.click();
-     //   Driver.setTimeouts();
         password_ID.clear();
         password_ID.sendKeys(password);
         button_XPATH.click();
+        LOGGER.debug("Filling in the email and password fields to enter the account.(email_ID, password_ID)");
     }
 }
