@@ -15,7 +15,7 @@ public class OpenMyGMailSteps {
     private GMailAccountPage gMailAccountPage;
     private GMailMyPage gMailMyPage;
 
-    private static final Logger LOGGER = LogManager.getLogger(BookingLoginPasswordSteps.class);
+    private static final Logger LOGGER = LogManager.getLogger(BookingBaseSteps.class);
 
     public void OpenAndFindEmailMyGMail(String login, String password) throws InterruptedException {
         LOGGER.info("Transition to Gmail.com to confirm registration at booking.com");

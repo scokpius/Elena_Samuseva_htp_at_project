@@ -17,7 +17,7 @@ public class ConfigProperties {
     }
 
     public static String read(String key){
-        try (FileInputStream file = new FileInputStream(pathTestData)){
+        try (FileInputStream file = new  FileInputStream(pathTestData)){
             ConfigProperties.property = new Properties();
             property.load(file);
         } catch (IOException e) {
