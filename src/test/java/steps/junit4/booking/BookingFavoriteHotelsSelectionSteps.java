@@ -1,4 +1,4 @@
-package steps.booking;
+package steps.junit4.booking;
 
 import drivers.Driver;
 import drivers.URL;
@@ -10,14 +10,11 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import settings.GetPath;
-import skreens.booking.BookingAccountPage;
 import skreens.booking.BookingFavoriteHotelsPage;
 import skreens.booking.BookingHomePage;
 import skreens.booking.BookingSearchResultsHotelsPage;
-import steps.base_steps.BookingLoginPasswordSteps;
-import steps.base_steps.InitCloseDriverSteps;
+import steps.base_steps.BookingBaseSteps;
 import utility.JsonParser;
-import utility.WriteReadFail;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -43,7 +40,7 @@ public class BookingFavoriteHotelsSelectionSteps /*extends InitCloseDriverSteps 
 
     @Test
     public void BookingFavoriteHotelsSelection() throws InterruptedException {
-        BookingLoginPasswordSteps.currentAccount(bookingHomePage);
+        BookingBaseSteps.currentAccount(bookingHomePage);
         bookingHomePage.enteringSearchData(city.get(3).city, city.get(3).date_in, city.get(3).difference,
                 city.get(3).adults, city.get(3).children, city.get(3).rooms);
         Thread.sleep(5000);
@@ -58,26 +55,13 @@ public class BookingFavoriteHotelsSelectionSteps /*extends InitCloseDriverSteps 
         bookingHotels.bannerBlock.buttonCurrentAccount_ID.click();
         bookingHotels.bannerBlock.accountFavorites_XPATH.click();
         Driver.setTimeouts();
-        int count = hotelPresenceOnList(listNameFavoriteHotels);
+        int count = BookingBaseSteps.hotelPresenceOnList(listNameFavoriteHotels);
         Assert.assertTrue("Not all hotels listed.", count == 2);
-    }
-
-    private int hotelPresenceOnList(List<String> listNameFavoriteHotels) {
-        int count = 0;
-        for (int i = 0; i < listNameFavoriteHotels.size(); i++) {
-            for (int j = 0; j < bookingFavoriteHotels.getlistNameHotels().size(); j++) {
-                if (listNameFavoriteHotels.get(i).equals(bookingFavoriteHotels.getlistNameHotels().get(j))){
-                    count++;
-                }
-            }
-        }
-        LOGGER.debug("Checking the availability of the hotel in the 'My next trip' list");
-        return count;
     }
 
     @After
     public void finished(){
-        BookingLoginPasswordSteps.signOut(bookingHomePage);
+        BookingBaseSteps.signOut(bookingHomePage);
         LOGGER.info("---------------------------Test finished--------------------------");
     }
 }

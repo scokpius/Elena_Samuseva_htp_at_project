@@ -8,7 +8,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
 public class InitCloseDriverSteps {
-    private static final Logger LOGGER = LogManager.getLogger(BookingLoginPasswordSteps.class);
+    private static final Logger LOGGER = LogManager.getLogger(BookingBaseSteps.class);
     @BeforeClass
     public static void initDriver(){
         LOGGER.info("---------------------------Test started---------------------------");

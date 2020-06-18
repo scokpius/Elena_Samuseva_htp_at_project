@@ -1,4 +1,4 @@
-package steps.trashmail;
+package steps.junit4.trashmail;
 
 import drivers.Driver;
 import drivers.URL;

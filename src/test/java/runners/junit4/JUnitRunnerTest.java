@@ -8,10 +8,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import steps.booking.BookingCreateNewUserSteps;
-import steps.booking.BookingFavoriteHotelsSelectionSteps;
-import steps.booking.BookingHeaderElementsSteps;
-import steps.booking.BookingParisMoscowOsloSteps;
+import steps.junit4.booking.*;
+
 
 
 @RunWith(Suite.class)
@@ -19,10 +17,10 @@ import steps.booking.BookingParisMoscowOsloSteps;
                         BookingFavoriteHotelsSelectionSteps.class, BookingHeaderElementsSteps.class})
 public class JUnitRunnerTest {
 
-  //  private static final Logger LOGGER = LogManager.getLogger(JUnitRunnerBookingTest.class);
+    private static final Logger LOGGER = LogManager.getLogger(JUnitRunnerTest.class);
     @BeforeClass
     public static void initDriver(){
-//        LOGGER.info("---------------------------Started all test---------------------------");
+        LOGGER.info("---------------------------Started all test---------------------------");
         Driver.initDriver(ConfigDriver.CHROME);
         Driver.maximize();
         Driver.setTimeouts();
@@ -30,6 +28,6 @@ public class JUnitRunnerTest {
     @AfterClass
     public static void closeDriver(){
         Driver.destroy();
-//        LOGGER.info("---------------------------Finished all test---------------------------");
+        LOGGER.info("---------------------------Finished all test---------------------------");
     }
 }

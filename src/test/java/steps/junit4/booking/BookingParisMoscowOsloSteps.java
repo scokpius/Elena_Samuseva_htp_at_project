@@ -1,4 +1,4 @@
-package steps.booking;
+package steps.junit4.booking;
 
 import drivers.Driver;
 import drivers.URL;
@@ -12,9 +12,7 @@ import org.junit.Test;
 import settings.GetPath;
 import skreens.booking.BookingHomePage;
 import skreens.booking.BookingSearchResultsHotelsPage;
-import steps.base_steps.BookingLoginPasswordSteps;
 import utility.JsonParser;
-
 import java.io.IOException;
 import java.util.List;
 
