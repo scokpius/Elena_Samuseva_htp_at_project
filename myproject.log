@@ -8135,3 +8135,1105 @@
 2020-06-18 17:06:22,051 DEBUG BookingBaseSteps - This item was found on the page: taxiTab_XPATH.
 2020-06-18 17:06:22,052  INFO BookingBaseSteps - Log out of the site account.
 2020-06-18 17:06:29,482  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:50:55,576  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:50:55,657 DEBUG HttpBaseSteps - Getting a response from WebService
+2020-06-18 21:50:57,306 DEBUG RequestAddCookies - CookieSpec selected: default
+2020-06-18 21:50:57,322 DEBUG RequestAuthCache - Auth cache not set in the context
+2020-06-18 21:50:57,324 DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-18 21:50:57,352 DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,357 DEBUG MainClientExec - Opening connection {}->http://178.124.206.46:8001
+2020-06-18 21:50:57,362 DEBUG DefaultHttpClientConnectionOperator - Connecting to /178.124.206.46:8001
+2020-06-18 21:50:57,376 DEBUG DefaultHttpClientConnectionOperator - Connection established 0:0:0:0:0:0:0:1:58795<->178.124.206.46:8001
+2020-06-18 21:50:57,376 DEBUG MainClientExec - Executing request POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,378 DEBUG MainClientExec - Target auth state: UNCHALLENGED
+2020-06-18 21:50:57,379 DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-18 21:50:57,383 DEBUG headers - http-outgoing-0 >> POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,383 DEBUG headers - http-outgoing-0 >> Content-Length: 26
+2020-06-18 21:50:57,384 DEBUG headers - http-outgoing-0 >> Content-Type: text/plain; charset=ISO-8859-1
+2020-06-18 21:50:57,384 DEBUG headers - http-outgoing-0 >> Host: 178.124.206.46:8001
+2020-06-18 21:50:57,384 DEBUG headers - http-outgoing-0 >> Connection: Keep-Alive
+2020-06-18 21:50:57,384 DEBUG headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+2020-06-18 21:50:57,384 DEBUG headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-06-18 21:50:57,385 DEBUG wire - http-outgoing-0 >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+2020-06-18 21:50:57,385 DEBUG wire - http-outgoing-0 >> "Content-Length: 26[\r][\n]"
+2020-06-18 21:50:57,385 DEBUG wire - http-outgoing-0 >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-06-18 21:50:57,385 DEBUG wire - http-outgoing-0 >> "Host: 178.124.206.46:8001[\r][\n]"
+2020-06-18 21:50:57,386 DEBUG wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,386 DEBUG wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+2020-06-18 21:50:57,386 DEBUG wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-18 21:50:57,386 DEBUG wire - http-outgoing-0 >> "[\r][\n]"
+2020-06-18 21:50:57,386 DEBUG wire - http-outgoing-0 >> "{"user":"a","strict":true}"
+2020-06-18 21:50:57,418 DEBUG wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2020-06-18 21:50:57,418 DEBUG wire - http-outgoing-0 << "Date: Thu, 18 Jun 2020 18:50:57 GMT[\r][\n]"
+2020-06-18 21:50:57,418 DEBUG wire - http-outgoing-0 << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+2020-06-18 21:50:57,418 DEBUG wire - http-outgoing-0 << "X-Powered-By: PHP/7.4.1[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "Content-Length: 224[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "[\r][\n]"
+2020-06-18 21:50:57,419 DEBUG wire - http-outgoing-0 << "{[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "    "code": "0",[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "    "data": [[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "        {[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "            "id": "1",[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "            "username": "a",[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "            "realname": "Alberto Boo",[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "            "password": "b",[\n]"
+2020-06-18 21:50:57,420 DEBUG wire - http-outgoing-0 << "            "email": "alberto.boo@mail.com"[\n]"
+2020-06-18 21:50:57,421 DEBUG wire - http-outgoing-0 << "        }[\n]"
+2020-06-18 21:50:57,421 DEBUG wire - http-outgoing-0 << "    ][\n]"
+2020-06-18 21:50:57,422 DEBUG wire - http-outgoing-0 << "}"
+2020-06-18 21:50:57,427 DEBUG headers - http-outgoing-0 << HTTP/1.1 200 OK
+2020-06-18 21:50:57,427 DEBUG headers - http-outgoing-0 << Date: Thu, 18 Jun 2020 18:50:57 GMT
+2020-06-18 21:50:57,427 DEBUG headers - http-outgoing-0 << Server: Apache/2.4.38 (Debian)
+2020-06-18 21:50:57,428 DEBUG headers - http-outgoing-0 << X-Powered-By: PHP/7.4.1
+2020-06-18 21:50:57,428 DEBUG headers - http-outgoing-0 << Content-Length: 224
+2020-06-18 21:50:57,428 DEBUG headers - http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2020-06-18 21:50:57,428 DEBUG headers - http-outgoing-0 << Connection: Keep-Alive
+2020-06-18 21:50:57,428 DEBUG headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+2020-06-18 21:50:57,434 DEBUG MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+2020-06-18 21:50:57,439 DEBUG PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://178.124.206.46:8001] can be kept alive for 5.0 seconds
+2020-06-18 21:50:57,439 DEBUG DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+2020-06-18 21:50:57,439 DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://178.124.206.46:8001][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,443  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:50:57,448  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:50:57,453 DEBUG HttpBaseSteps - Getting a response from WebService
+2020-06-18 21:50:57,456 DEBUG RequestAddCookies - CookieSpec selected: default
+2020-06-18 21:50:57,457 DEBUG RequestAuthCache - Auth cache not set in the context
+2020-06-18 21:50:57,457 DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-18 21:50:57,457 DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,457 DEBUG MainClientExec - Opening connection {}->http://178.124.206.46:8001
+2020-06-18 21:50:57,458 DEBUG DefaultHttpClientConnectionOperator - Connecting to /178.124.206.46:8001
+2020-06-18 21:50:57,466 DEBUG DefaultHttpClientConnectionOperator - Connection established 0:0:0:0:0:0:0:1:58798<->178.124.206.46:8001
+2020-06-18 21:50:57,467 DEBUG MainClientExec - Executing request POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,467 DEBUG MainClientExec - Target auth state: UNCHALLENGED
+2020-06-18 21:50:57,467 DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-18 21:50:57,467 DEBUG headers - http-outgoing-1 >> POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,467 DEBUG headers - http-outgoing-1 >> Content-Length: 30
+2020-06-18 21:50:57,467 DEBUG headers - http-outgoing-1 >> Content-Type: text/plain; charset=ISO-8859-1
+2020-06-18 21:50:57,467 DEBUG headers - http-outgoing-1 >> Host: 178.124.206.46:8001
+2020-06-18 21:50:57,467 DEBUG headers - http-outgoing-1 >> Connection: Keep-Alive
+2020-06-18 21:50:57,468 DEBUG headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+2020-06-18 21:50:57,468 DEBUG headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2020-06-18 21:50:57,468 DEBUG wire - http-outgoing-1 >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "Content-Length: 30[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "Host: 178.124.206.46:8001[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+2020-06-18 21:50:57,469 DEBUG wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-18 21:50:57,470 DEBUG wire - http-outgoing-1 >> "[\r][\n]"
+2020-06-18 21:50:57,470 DEBUG wire - http-outgoing-1 >> "{"user":"berta","strict":true}"
+2020-06-18 21:50:57,488 DEBUG wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Date: Thu, 18 Jun 2020 18:50:57 GMT[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "X-Powered-By: PHP/7.4.1[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Content-Length: 235[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-06-18 21:50:57,489 DEBUG wire - http-outgoing-1 << "[\r][\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "{[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "    "code": "0",[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "    "data": [[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "        {[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "            "id": "3",[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "            "username": "berta",[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "            "realname": "Berta Crush",[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "            "password": "Tre4gh0M",[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "            "email": "berta.crush@mail.com"[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "        }[\n]"
+2020-06-18 21:50:57,490 DEBUG wire - http-outgoing-1 << "    ][\n]"
+2020-06-18 21:50:57,491 DEBUG wire - http-outgoing-1 << "}"
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << HTTP/1.1 200 OK
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Date: Thu, 18 Jun 2020 18:50:57 GMT
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Server: Apache/2.4.38 (Debian)
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << X-Powered-By: PHP/7.4.1
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Content-Length: 235
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Keep-Alive: timeout=5, max=100
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Connection: Keep-Alive
+2020-06-18 21:50:57,491 DEBUG headers - http-outgoing-1 << Content-Type: application/json; charset=utf-8
+2020-06-18 21:50:57,492 DEBUG MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+2020-06-18 21:50:57,492 DEBUG PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://178.124.206.46:8001] can be kept alive for 5.0 seconds
+2020-06-18 21:50:57,492 DEBUG DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+2020-06-18 21:50:57,493 DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://178.124.206.46:8001][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,495  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:50:57,496  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:50:57,498 DEBUG HttpBaseSteps - Getting a response from WebService
+2020-06-18 21:50:57,501 DEBUG RequestAddCookies - CookieSpec selected: default
+2020-06-18 21:50:57,503 DEBUG RequestAuthCache - Auth cache not set in the context
+2020-06-18 21:50:57,503 DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-18 21:50:57,504 DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,504 DEBUG MainClientExec - Opening connection {}->http://178.124.206.46:8001
+2020-06-18 21:50:57,505 DEBUG DefaultHttpClientConnectionOperator - Connecting to /178.124.206.46:8001
+2020-06-18 21:50:57,512 DEBUG DefaultHttpClientConnectionOperator - Connection established 0:0:0:0:0:0:0:1:58801<->178.124.206.46:8001
+2020-06-18 21:50:57,512 DEBUG MainClientExec - Executing request POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,513 DEBUG MainClientExec - Target auth state: UNCHALLENGED
+2020-06-18 21:50:57,513 DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> Content-Length: 27
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> Content-Type: text/plain; charset=ISO-8859-1
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> Host: 178.124.206.46:8001
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> Connection: Keep-Alive
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+2020-06-18 21:50:57,513 DEBUG headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+2020-06-18 21:50:57,514 DEBUG wire - http-outgoing-2 >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+2020-06-18 21:50:57,514 DEBUG wire - http-outgoing-2 >> "Content-Length: 27[\r][\n]"
+2020-06-18 21:50:57,514 DEBUG wire - http-outgoing-2 >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-06-18 21:50:57,515 DEBUG wire - http-outgoing-2 >> "Host: 178.124.206.46:8001[\r][\n]"
+2020-06-18 21:50:57,515 DEBUG wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,515 DEBUG wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+2020-06-18 21:50:57,515 DEBUG wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-18 21:50:57,516 DEBUG wire - http-outgoing-2 >> "[\r][\n]"
+2020-06-18 21:50:57,516 DEBUG wire - http-outgoing-2 >> "{"user":"a","strict":false}"
+2020-06-18 21:50:57,534 DEBUG wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "Date: Thu, 18 Jun 2020 18:50:57 GMT[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "X-Powered-By: PHP/7.4.1[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "Content-Length: 836[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-06-18 21:50:57,535 DEBUG wire - http-outgoing-2 << "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "[\r][\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "{[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "    "code": "0",[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "    "data": [[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "        {[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "            "id": "1",[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "            "username": "a",[\n]"
+2020-06-18 21:50:57,536 DEBUG wire - http-outgoing-2 << "            "realname": "Alberto Boo",[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "password": "b",[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "email": "alberto.boo@mail.com"[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "        },[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "        {[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "id": "3",[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "username": "berta",[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "realname": "Berta Crush",[\n]"
+2020-06-18 21:50:57,537 DEBUG wire - http-outgoing-2 << "            "password": "Tre4gh0M",[\n]"
+2020-06-18 21:50:57,538 DEBUG wire - http-outgoing-2 << "            "email": "berta.crush@mail.com"[\n]"
+2020-06-18 21:50:57,538 DEBUG wire - http-outgoing-2 << "        },[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "        {[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "            "id": "6",[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "            "username": "rangaradjangoo",[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "            "realname": "Rangaradjan Radjesh",[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "            "password": "bbRfw76rb",[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "            "email": "rangaradjan.radjesh@mail.com"[\n]"
+2020-06-18 21:50:57,539 DEBUG wire - http-outgoing-2 << "        },[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "        {[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "            "id": "2",[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "            "username": "saldo",[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "            "realname": "Saldo Rush",[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "            "password": "hro8052w",[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "            "email": "saldo.rush@mail.com"[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "        }[\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "    ][\n]"
+2020-06-18 21:50:57,540 DEBUG wire - http-outgoing-2 << "}"
+2020-06-18 21:50:57,540 DEBUG headers - http-outgoing-2 << HTTP/1.1 200 OK
+2020-06-18 21:50:57,541 DEBUG headers - http-outgoing-2 << Date: Thu, 18 Jun 2020 18:50:57 GMT
+2020-06-18 21:50:57,541 DEBUG headers - http-outgoing-2 << Server: Apache/2.4.38 (Debian)
+2020-06-18 21:50:57,542 DEBUG headers - http-outgoing-2 << X-Powered-By: PHP/7.4.1
+2020-06-18 21:50:57,542 DEBUG headers - http-outgoing-2 << Content-Length: 836
+2020-06-18 21:50:57,542 DEBUG headers - http-outgoing-2 << Keep-Alive: timeout=5, max=100
+2020-06-18 21:50:57,542 DEBUG headers - http-outgoing-2 << Connection: Keep-Alive
+2020-06-18 21:50:57,542 DEBUG headers - http-outgoing-2 << Content-Type: application/json; charset=utf-8
+2020-06-18 21:50:57,542 DEBUG MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+2020-06-18 21:50:57,543 DEBUG PoolingHttpClientConnectionManager - Connection [id: 2][route: {}->http://178.124.206.46:8001] can be kept alive for 5.0 seconds
+2020-06-18 21:50:57,543 DEBUG DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 0
+2020-06-18 21:50:57,543 DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->http://178.124.206.46:8001][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,545 DEBUG HttpBaseSteps - Comparing the list of objects of class USER when there are more than one
+2020-06-18 21:50:57,545  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:50:57,546  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:50:57,550 DEBUG HttpBaseSteps - Getting a response from WebService
+2020-06-18 21:50:57,552 DEBUG RequestAddCookies - CookieSpec selected: default
+2020-06-18 21:50:57,553 DEBUG RequestAuthCache - Auth cache not set in the context
+2020-06-18 21:50:57,553 DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-18 21:50:57,553 DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,553 DEBUG MainClientExec - Opening connection {}->http://178.124.206.46:8001
+2020-06-18 21:50:57,553 DEBUG DefaultHttpClientConnectionOperator - Connecting to /178.124.206.46:8001
+2020-06-18 21:50:57,561 DEBUG DefaultHttpClientConnectionOperator - Connection established 0:0:0:0:0:0:0:1:58804<->178.124.206.46:8001
+2020-06-18 21:50:57,561 DEBUG MainClientExec - Executing request POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,561 DEBUG MainClientExec - Target auth state: UNCHALLENGED
+2020-06-18 21:50:57,561 DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-18 21:50:57,562 DEBUG headers - http-outgoing-3 >> POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,562 DEBUG headers - http-outgoing-3 >> Content-Length: 29
+2020-06-18 21:50:57,562 DEBUG headers - http-outgoing-3 >> Content-Type: text/plain; charset=ISO-8859-1
+2020-06-18 21:50:57,562 DEBUG headers - http-outgoing-3 >> Host: 178.124.206.46:8001
+2020-06-18 21:50:57,563 DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+2020-06-18 21:50:57,563 DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+2020-06-18 21:50:57,563 DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "Content-Length: 29[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "Host: 178.124.206.46:8001[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+2020-06-18 21:50:57,563 DEBUG wire - http-outgoing-3 >> "{"user":"sim","strict":false}"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Date: Thu, 18 Jun 2020 18:50:57 GMT[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "X-Powered-By: PHP/7.4.1[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Content-Length: 237[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,580 DEBUG wire - http-outgoing-3 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-06-18 21:50:57,581 DEBUG wire - http-outgoing-3 << "[\r][\n]"
+2020-06-18 21:50:57,581 DEBUG wire - http-outgoing-3 << "{[\n]"
+2020-06-18 21:50:57,581 DEBUG wire - http-outgoing-3 << "    "code": "0",[\n]"
+2020-06-18 21:50:57,581 DEBUG wire - http-outgoing-3 << "    "data": [[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "        {[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "            "id": "4",[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "            "username": "simon",[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "            "realname": "Simon Greath",[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "            "password": "qbmu76rb",[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "            "email": "simon.greath@mail.com"[\n]"
+2020-06-18 21:50:57,582 DEBUG wire - http-outgoing-3 << "        }[\n]"
+2020-06-18 21:50:57,583 DEBUG wire - http-outgoing-3 << "    ][\n]"
+2020-06-18 21:50:57,583 DEBUG wire - http-outgoing-3 << "}"
+2020-06-18 21:50:57,583 DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+2020-06-18 21:50:57,583 DEBUG headers - http-outgoing-3 << Date: Thu, 18 Jun 2020 18:50:57 GMT
+2020-06-18 21:50:57,583 DEBUG headers - http-outgoing-3 << Server: Apache/2.4.38 (Debian)
+2020-06-18 21:50:57,583 DEBUG headers - http-outgoing-3 << X-Powered-By: PHP/7.4.1
+2020-06-18 21:50:57,584 DEBUG headers - http-outgoing-3 << Content-Length: 237
+2020-06-18 21:50:57,584 DEBUG headers - http-outgoing-3 << Keep-Alive: timeout=5, max=100
+2020-06-18 21:50:57,584 DEBUG headers - http-outgoing-3 << Connection: Keep-Alive
+2020-06-18 21:50:57,584 DEBUG headers - http-outgoing-3 << Content-Type: application/json; charset=utf-8
+2020-06-18 21:50:57,584 DEBUG MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+2020-06-18 21:50:57,584 DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://178.124.206.46:8001] can be kept alive for 5.0 seconds
+2020-06-18 21:50:57,585 DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 0
+2020-06-18 21:50:57,585 DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://178.124.206.46:8001][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,587  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:50:57,588  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:50:57,591 DEBUG HttpBaseSteps - Getting a response from WebService
+2020-06-18 21:50:57,593 DEBUG RequestAddCookies - CookieSpec selected: default
+2020-06-18 21:50:57,594 DEBUG RequestAuthCache - Auth cache not set in the context
+2020-06-18 21:50:57,594 DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-06-18 21:50:57,594 DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 4][route: {}->http://178.124.206.46:8001][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,595 DEBUG MainClientExec - Opening connection {}->http://178.124.206.46:8001
+2020-06-18 21:50:57,595 DEBUG DefaultHttpClientConnectionOperator - Connecting to /178.124.206.46:8001
+2020-06-18 21:50:57,602 DEBUG DefaultHttpClientConnectionOperator - Connection established 0:0:0:0:0:0:0:1:58807<->178.124.206.46:8001
+2020-06-18 21:50:57,603 DEBUG MainClientExec - Executing request POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,603 DEBUG MainClientExec - Target auth state: UNCHALLENGED
+2020-06-18 21:50:57,603 DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> POST /app/ws/ HTTP/1.1
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> Content-Length: 25
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> Content-Type: text/plain; charset=ISO-8859-1
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> Host: 178.124.206.46:8001
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> Connection: Keep-Alive
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)
+2020-06-18 21:50:57,603 DEBUG headers - http-outgoing-4 >> Accept-Encoding: gzip,deflate
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "POST /app/ws/ HTTP/1.1[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "Content-Length: 25[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "Host: 178.124.206.46:8001[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_221)[\r][\n]"
+2020-06-18 21:50:57,604 DEBUG wire - http-outgoing-4 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-06-18 21:50:57,605 DEBUG wire - http-outgoing-4 >> "[\r][\n]"
+2020-06-18 21:50:57,605 DEBUG wire - http-outgoing-4 >> "{"user":"","strict":true}"
+2020-06-18 21:50:57,621 DEBUG wire - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "Date: Thu, 18 Jun 2020 18:50:57 GMT[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "Server: Apache/2.4.38 (Debian)[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "X-Powered-By: PHP/7.4.1[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "Content-Length: 1223[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2020-06-18 21:50:57,622 DEBUG wire - http-outgoing-4 << "Connection: Keep-Alive[\r][\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "[\r][\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "{[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "    "code": "0",[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "    "data": [[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "id": "1",[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "username": "a",[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "realname": "Alberto Boo",[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "password": "b",[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "email": "alberto.boo@mail.com"[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "        },[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,623 DEBUG wire - http-outgoing-4 << "            "id": "3",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "username": "berta",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "realname": "Berta Crush",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "password": "Tre4gh0M",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "email": "berta.crush@mail.com"[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "        },[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "id": "5",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "username": "john",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "realname": "John Doe",[\n]"
+2020-06-18 21:50:57,624 DEBUG wire - http-outgoing-4 << "            "password": "Saltro45",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "email": "john.doe@mail.com"[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "        },[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "id": "6",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "username": "rangaradjangoo",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "realname": "Rangaradjan Radjesh",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "password": "bbRfw76rb",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "email": "rangaradjan.radjesh@mail.com"[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "        },[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "id": "2",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "username": "saldo",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "realname": "Saldo Rush",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "password": "hro8052w",[\n]"
+2020-06-18 21:50:57,625 DEBUG wire - http-outgoing-4 << "            "email": "saldo.rush@mail.com"[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "        },[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "        {[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "            "id": "4",[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "            "username": "simon",[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "            "realname": "Simon Greath",[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "            "password": "qbmu76rb",[\n]"
+2020-06-18 21:50:57,626 DEBUG wire - http-outgoing-4 << "            "email": "simon.greath@mail.com"[\n]"
+2020-06-18 21:50:57,627 DEBUG wire - http-outgoing-4 << "        }[\n]"
+2020-06-18 21:50:57,627 DEBUG wire - http-outgoing-4 << "    ][\n]"
+2020-06-18 21:50:57,627 DEBUG wire - http-outgoing-4 << "}"
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << HTTP/1.1 200 OK
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Date: Thu, 18 Jun 2020 18:50:57 GMT
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Server: Apache/2.4.38 (Debian)
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << X-Powered-By: PHP/7.4.1
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Content-Length: 1223
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Keep-Alive: timeout=5, max=100
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Connection: Keep-Alive
+2020-06-18 21:50:57,627 DEBUG headers - http-outgoing-4 << Content-Type: application/json; charset=utf-8
+2020-06-18 21:50:57,627 DEBUG MainClientExec - Connection can be kept alive for 5000 MILLISECONDS
+2020-06-18 21:50:57,628 DEBUG PoolingHttpClientConnectionManager - Connection [id: 4][route: {}->http://178.124.206.46:8001] can be kept alive for 5.0 seconds
+2020-06-18 21:50:57,628 DEBUG DefaultManagedHttpClientConnection - http-outgoing-4: set socket timeout to 0
+2020-06-18 21:50:57,628 DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 4][route: {}->http://178.124.206.46:8001][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-06-18 21:50:57,630 DEBUG HttpBaseSteps - Comparing the list of objects of class USER when there are more than one
+2020-06-18 21:50:57,631  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:56:45,318  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:56:55,190  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-18 21:56:55,191  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 21:57:01,533  INFO WebServiceCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:57:06,801  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:57:06,802  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 21:57:06,816  INFO WebServiceCucumberSteps - ---------------------------Test started--------------------------
+2020-06-18 21:57:12,440  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-18 21:57:12,440  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 21:59:36,678  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 21:59:45,206  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:02:20,013  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:02:31,718  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:02:37,815  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:03:28,900  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:03:40,272  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:07:13,201  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:07:23,497  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:07:29,424  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:07:36,380  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:07:52,389  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:08:15,832  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:08:26,073  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:08:32,298  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:10:31,220  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:10:37,307  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:11:10,855  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:11:20,880  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:11:54,557  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:12:02,593  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:12:33,594  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:12:46,187  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:12:51,767  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:13:16,711  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:13:24,786  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:13:54,587  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:14:02,859  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:15:01,971  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:15:24,628  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:17:59,042  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:18:11,850  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:22:16,181  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:22:26,311  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:23:05,373  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:23:29,736  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:23:37,529  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:26:13,025  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:26:20,224 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:26:35,301  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:27:30,361  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:28:16,246  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:28:23,361 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:28:30,846 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:28:36,233  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:29:57,766  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:30:12,254  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:32:42,936  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:32:50,364 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:33:05,422  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:33:44,071  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:33:53,734  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:33:59,673  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:34:10,550  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:34:37,082  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:34:45,195 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:34:57,135  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:35:02,731  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:37:38,857  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:37:46,939 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:37:56,901 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:37:58,154  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:38:51,736  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:38:59,244 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:39:14,104  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:41:08,053  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:41:15,753 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:41:53,161  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:41:59,922 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:42:08,756 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:42:10,652  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:42:16,504  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:42:36,072  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:42:58,704  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:43:15,840  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:43:23,339 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:43:38,245  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:44:23,790  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:44:30,306 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:44:36,112 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:44:41,034  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:44:46,809  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:45:28,015  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:45:35,673 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:47:02,343  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:47:09,488 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:47:14,435 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:47:16,744  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 22:49:41,252  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 22:49:48,339 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 22:49:56,808 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:49:57,512 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 22:50:02,906  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:04:10,995  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:04:19,369 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:04:34,273  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:04:39,985  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:04:49,799  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:04:55,330  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:05:02,405  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:05:08,859  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:05:19,489  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:05:25,074  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:05:46,528  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:05:54,744 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:05:58,860 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:05:59,046 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:06:03,984  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:06:09,575  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:06:16,639  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:06:22,383  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:06:30,618  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:06:36,131  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:06:47,763  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:06:53,276  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:07:04,289  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:09:34,791  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:09:43,209 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:09:48,871 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:09:49,069 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:09:50,681  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:10:20,361  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:10:28,007 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:10:31,576 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:11:05,961 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:12:01,809  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:12:09,856 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:12:13,138 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:12:13,472 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:12:18,648  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:15:16,288  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:15:24,513 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:15:28,210 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:15:29,493  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:16:48,195  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:16:56,393 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:17:20,254  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:17:28,257 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:17:31,942 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:17:37,304  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:18:19,443  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:18:27,625 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:18:30,306 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:18:32,035  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:19:16,459  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:19:26,045 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:19:33,354 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:19:34,766  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:20:24,273  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:20:32,509 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:20:35,745 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:20:41,161  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:20:46,712  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:25:13,576  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:25:23,859 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:25:25,424 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:29:25,829  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:29:38,251 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:29:38,850 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:29:42,627  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:30:09,738  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:30:21,289 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:30:21,867 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:30:24,594  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:31:15,655  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:31:53,038  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:32:05,489 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:32:06,179 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:32:11,840  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:33:09,751  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:33:19,968 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:33:21,466 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:33:25,366  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:34:45,085  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:34:55,695 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:34:56,881 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:35:00,948  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:38:28,475  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:38:39,969 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:38:40,813 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:38:43,141  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:39:20,424  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:39:31,590 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:39:32,852 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:39:34,334  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:39:40,234  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:39:51,147  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:39:56,766  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:40:08,569  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:40:15,075  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:40:26,172  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:40:31,989  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:40:43,336  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:48:29,077  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:48:40,864 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:48:41,298 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:48:42,756  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:49:20,727  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:49:31,220 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:49:31,622 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:49:32,868  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:52:00,128  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:52:08,784 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:52:24,711  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:52:31,412  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:52:51,444  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:53:01,612 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:53:02,679 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:53:04,053  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:53:40,487  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:53:51,860 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:53:52,391 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:53:58,126  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:54:04,133  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:55:31,903  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:55:41,177 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:56:00,608  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:56:18,930 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:56:20,013 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:56:25,134  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:58:04,140  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:58:13,058 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:58:14,483 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:58:15,939  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-18 23:59:48,003  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-18 23:59:58,336 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-18 23:59:58,857 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-18 23:59:58,858 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-18 23:59:59,012 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:00:04,219  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:00:55,958  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:01:04,632 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:01:06,150 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:01:06,150 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:01:06,367 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:01:09,147  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:01:15,015  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:01:26,561  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:01:32,096  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:01:35,727  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:01:35,748  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:02:03,861  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:02:15,328 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:02:15,970 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:02:15,971 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:02:16,099 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:02:17,178  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:02:23,337  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:02:42,934  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:02:52,415 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:02:53,493 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:02:53,494 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:02:53,675 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:02:54,790  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:03:00,596  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:04:25,266  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:04:36,483 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:04:37,468 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:04:38,918  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:05:57,748  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:06:07,108 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:06:08,753 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:06:10,132  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:07:45,078  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:07:54,896 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:07:55,899 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:07:57,140  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:09:07,006  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:09:15,917 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:09:17,699 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:09:17,699 DEBUG SilverscreenHomePage - Returns the size of a list of movie titles by search results.(resultSearchFilmName_CSS)
+2020-06-19 00:09:23,373  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:13:08,273  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:13:18,549 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:13:19,735 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:13:21,312  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:15:03,591  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:15:14,826 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:15:15,441 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:15:18,086  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:16:23,995  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:16:35,246 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:16:36,573 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:16:40,090  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:16:46,519  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:16:55,285  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:17:01,419  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:17:05,924  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:17:05,940  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:23:17,786  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:23:28,485 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:23:29,125 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:23:30,971  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:24:09,843  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:24:19,747 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:24:21,145 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:24:22,799  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:25:49,280  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:25:59,438 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:26:00,791 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:26:02,037  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:26:07,676  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:26:10,389  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:26:10,419  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:58:59,809  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:59:08,950 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 00:59:10,465 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 00:59:12,758  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 00:59:18,489  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 00:59:30,120  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:00:21,676  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:00:32,032 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 01:00:32,481 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 01:00:34,493  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:00:40,353  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:00:55,913  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:08:51,258  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:09:03,733 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 01:09:04,390 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 01:09:06,636  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:09:12,636  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:09:32,613  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:10:03,759  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:10:15,082 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 01:10:16,931 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 01:10:22,259  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:10:29,292  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:10:52,605  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:12:47,557  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:13:00,792  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:13:06,465  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:13:23,114  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:16:00,677  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:16:11,702  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:16:17,232  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:16:35,654  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:16:54,873  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:17:01,058  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:17:06,587  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:17:21,211  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:21:07,614  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:21:15,417  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:21:20,954  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:21:43,388  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:23:54,503  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:24:05,863  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:24:11,486  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:24:22,070 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 01:24:26,937  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:25:20,727  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:25:27,465  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 01:25:34,057  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 01:25:49,925 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 01:25:51,690  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:00:49,158  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:00:59,188  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:01:05,949  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:01:20,544 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:01:25,112  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:01:31,529  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:03:06,186  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:03:17,851 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:03:19,559 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:03:21,373  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:03:27,347  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:03:36,868 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:03:41,883  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:03:47,512  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:03:48,882  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:03:48,904  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:06:13,549  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:06:23,750 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:06:24,938 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:06:26,757  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:06:33,288  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:06:49,037 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:06:50,600  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:06:57,619  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:07:00,108  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:07:00,133  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:19:00,358  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:19:14,786 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:19:15,436 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:19:20,988  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:19:26,832  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:19:44,136 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:19:50,507  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:21:27,241  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:21:38,489 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:21:40,404 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:21:45,755  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:21:51,718  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:22:09,203 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:22:14,640  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:23:35,955  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:23:45,270 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:23:46,825 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:23:52,256  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:23:57,899  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:24:12,729 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:24:17,721  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:24:23,657  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:31:11,194  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:31:21,451 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:31:22,282 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:31:23,824  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:31:30,549  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:31:44,963 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:31:50,029  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:33:37,981  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:33:47,473 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:33:48,564 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:33:50,398  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:33:56,545  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:34:11,199 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:34:16,192  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:35:26,383  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:35:36,839 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:35:37,279 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:35:38,782  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:35:44,893  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:35:58,848 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:36:03,605  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:37:19,231  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:37:28,509 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:37:29,491 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:37:30,746  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:37:37,421  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:37:51,973 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:37:56,728  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:41:08,366  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:41:17,464 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:41:18,865 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:41:24,140  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:41:29,773  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:41:43,814 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:41:48,822  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:45:45,704  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:45:55,143 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:45:56,180 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:45:57,592  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:46:03,425  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:46:17,186 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:46:17,186 DEBUG SilverscreenHomePage - comparison of account level with a given.(level_CSS)
+2020-06-19 02:46:22,305  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:46:27,895  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:46:33,867  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:53:38,947  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:53:49,362 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 02:53:50,416 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 02:53:53,106  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:53:59,024  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:54:13,809 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 02:54:13,809 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 02:54:13,861 DEBUG SilverscreenHomePage - log out of account.(buttonExit_CSS)
+2020-06-19 02:54:18,877  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:54:24,691  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 02:54:31,304  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 02:54:31,333  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:21:11,186  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:21:22,059 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 03:21:22,862 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 03:21:25,221  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:21:31,430  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:21:46,392 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 03:21:46,392 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 03:21:51,479  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:21:57,342  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:22:07,290  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:55:53,134  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:56:05,044 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 03:56:05,500 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 03:56:06,663  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:56:12,605  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:56:26,564 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 03:56:26,564 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 03:56:31,308  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:56:36,966  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:56:43,374  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:56:49,297  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:56:59,833  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:57:05,472  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:57:21,806 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 03:57:26,836  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:58:13,752  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:58:23,014 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 03:58:24,197 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 03:58:26,381  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:58:32,196  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:58:46,826 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 03:58:46,826 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 03:58:51,591  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:58:57,211  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:59:04,856  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:59:11,033  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 03:59:12,997  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 03:59:13,023  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:00:27,823  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:00:40,111 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:00:41,090 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:00:43,227  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:00:48,819  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:01:02,748 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:01:02,748 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:01:07,912  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:01:13,515  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:01:21,731  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:01:27,349  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:01:38,057  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:03:08,694  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:03:19,322 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:03:19,825 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:03:21,190  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:03:27,323  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:03:41,331 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:03:41,331 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:03:46,347  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:03:51,977  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:03:58,819  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:05:49,342  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:05:57,703 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:05:59,088 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:06:00,778  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:06:07,033  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:06:21,021 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:06:21,021 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:06:25,778  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:06:31,491  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:06:42,008  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:06:47,567  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:06:59,243  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:07:04,908  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:07:19,404 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:07:24,381  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:11:40,316  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:11:53,388 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:11:54,046 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:11:59,226  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:12:05,167  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:12:21,565 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:12:21,565 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:12:26,954  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:12:33,243  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:12:48,658  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:12:54,859  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:13:02,528  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:13:26,527  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:13:38,810  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:14:08,267  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:14:17,500 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:14:18,726 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:14:20,151  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:14:25,878  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:14:39,532 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:14:39,532 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:14:44,589  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:14:50,183  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:14:56,895  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:15:02,658  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:15:11,234  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:16:17,010  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:16:28,399 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:16:28,936 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:16:33,920  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:16:39,486  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:16:53,616 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:16:53,616 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:16:58,386  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:17:04,690  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:17:14,305  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:18:48,360  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:18:57,455 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:18:58,400 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:19:00,329  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:19:06,054  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:19:19,968 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:19:19,968 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:19:24,771  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:19:30,399  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:19:43,517 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:19:50,157 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:19:54,915  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:20:00,575  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:20:48,715  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:20:57,915 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:20:59,002 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:21:04,094  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:21:09,981  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:21:25,635 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:21:25,636 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:21:30,820  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:21:36,440  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:21:49,667 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:21:56,253 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:22:01,300  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:23:18,612  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:23:28,600 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:23:29,042 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:23:31,398  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:23:37,417  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:23:51,518 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:23:51,518 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:23:56,575  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:24:02,105  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:24:15,567 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:24:22,096 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:25:47,504  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:25:56,600 DEBUG SilverscreenHomePage - Entering data to search.(searchWord_CSS)
+2020-06-19 04:25:57,569 DEBUG SilverscreenHomePage - Checking the presence of the word in the element.
+2020-06-19 04:25:59,233  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:26:04,976  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:26:13,816 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:26:13,816 DEBUG SilverscreenHomePage - Comparison of account level with a given.(level_CSS)
+2020-06-19 04:26:19,113  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:26:24,727  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:26:33,145 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:26:34,679 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:26:39,877  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:26:45,582  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:26:53,950 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:26:55,558  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:27:01,311  INFO SilverscreenBaseSteps - ---------------------------Test started---------------------------
+2020-06-19 04:27:10,205 DEBUG SilverscreenHomePage - Filling in the email and password fields to enter the account.(login_CSS, password_CSS, buttonSignIn_CSS)
+2020-06-19 04:27:15,568  INFO SilverscreenBaseSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:43:37,959  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:43:48,846 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-19 04:43:49,459 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-19 04:43:49,606 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-19 04:43:49,755 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-19 04:43:54,109 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-19 04:43:57,738 DEBUG BookingSearchResultsHotelsPage - Max price selection.(checkboxPriceMax_XPATH)
+2020-06-19 04:43:57,738 DEBUG BookingSearchResultsHotelsPage - Getting the maximum price.(checkboxPriceMax_XPATH)
+2020-06-19 04:43:58,226 DEBUG BookingSearchResultsHotelsPage - Click on the button the lowest price at the beginning.(sortingMin_XPATH)
+2020-06-19 04:44:03,311 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-19 04:44:13,377  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:44:19,362  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:44:28,507 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-19 04:44:29,026 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-19 04:44:29,153 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-19 04:44:29,241 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-19 04:44:33,003 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-19 04:44:35,963 DEBUG BookingSearchResultsHotelsPage - Min price selection.(checkboxPriceMax_XPATH)
+2020-06-19 04:44:35,963 DEBUG BookingSearchResultsHotelsPage - Getting the minimum price.(checkboxPriceMin_XPATH)
+2020-06-19 04:44:41,189 DEBUG BookingSearchResultsHotelsPage - Getting the price of the first hotel on the list.(priceOneFirstHotel_XPATH)
+2020-06-19 04:44:51,024  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:44:56,904  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:45:06,096 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-19 04:45:06,770 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-19 04:45:06,885 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-19 04:45:06,972 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-19 04:45:10,757 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-19 04:45:14,040 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox three stars.(checkboxThreeStars_XPATH)
+2020-06-19 04:45:14,423 DEBUG BookingSearchResultsHotelsPage - Put a checkmark in the checkbox four stars.(checkboxFourStars_XPATH)
+2020-06-19 04:45:19,424 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-19 04:45:19,544 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-19 04:45:19,545 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-19 04:45:19,606 DEBUG BookingSearchResultsHotelsPage - To color the background of the hotel.
+2020-06-19 04:45:19,606 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-19 04:45:19,699 DEBUG BookingSearchResultsHotelsPage - Change color hotel name.
+2020-06-19 04:45:19,699 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-19 04:45:24,652  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:45:30,686  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:45:30,703 DEBUG BookingBaseSteps - Getting disposable email address.(trashMailAddressManagerPage.AddButton_ID)
+2020-06-19 04:45:47,894  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:45:55,172  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:46:01,463  INFO BookingBaseSteps - Login to the site account.
+2020-06-19 04:46:04,515 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-19 04:46:12,172 DEBUG BookingHomePage - Choosing a city to travel.(city_ID, citySearch_XPATH)
+2020-06-19 04:46:12,724 DEBUG BookingHomePage - Choice of date of arrival and departure.(dateCheckIn_XPATH, dateCheckOut_XPATH)
+2020-06-19 04:46:12,881 DEBUG BookingHomePage - Click on adults children rooms.(adultsChildrenRooms_XPATH)
+2020-06-19 04:46:12,965 DEBUG BookingHomePage - Record the number of people, number of children and number of rooms.(accomodationInput)
+2020-06-19 04:46:18,225 DEBUG BookingHomePage - Fill in the search data and click the search button.(accomodationInput)
+2020-06-19 04:46:23,229 DEBUG BookingSearchResultsHotelsPage - Getting size list of hotels.(listHotell)
+2020-06-19 04:46:23,624 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-19 04:46:23,868 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-19 04:46:24,307 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-19 04:46:24,308 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-19 04:46:24,538 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-19 04:46:24,951 DEBUG BookingSearchResultsHotelsPage - Favorite hotel selection.(favoriteHotel_XPATH)
+2020-06-19 04:46:24,952 DEBUG BookingSearchResultsHotelsPage - Select a hotel from the list by index.(listHotell)
+2020-06-19 04:46:25,066 DEBUG BookingSearchResultsHotelsPage - Scrolling to a hotel with an index.
+2020-06-19 04:46:25,209 DEBUG BookingSearchResultsHotelsPage - Getting heart fill color.(heartColor_XPATH)
+2020-06-19 04:46:25,352 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-19 04:46:25,559 DEBUG BookingSearchResultsHotelsPage - Get hotel name locator.(nameHotel_XPATH)
+2020-06-19 04:46:30,169 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:30,403 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:30,837 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,085 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,269 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,478 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,647 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,813 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:31,994 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:32,221 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:32,414 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:32,587 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:32,858 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,034 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,217 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,390 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,578 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,763 DEBUG BookingFavoriteHotelsPage - Getting a list of hotels with a heart.(listNameHotels)
+2020-06-19 04:46:33,763 DEBUG BookingBaseSteps - Checking the availability of the hotel in the 'My next trip' list
+2020-06-19 04:46:33,765  INFO BookingBaseSteps - Log out of the site account.
+2020-06-19 04:46:41,327  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
+2020-06-19 04:46:47,578  INFO BookingCityCucumberSteps - ---------------------------Test started---------------------------
+2020-06-19 04:46:52,889  INFO BookingBaseSteps - Login to the site account.
+2020-06-19 04:46:57,966 DEBUG BookingAccountPage - Filling in the email and password fields to enter the account.(email_ID, password_ID)
+2020-06-19 04:47:02,047 DEBUG BookingBaseSteps - This item was found on the page: blueBannerFirst_ID.
+2020-06-19 04:47:03,797 DEBUG BookingBaseSteps - This item was found on the page: stringBookingCom_ID.
+2020-06-19 04:47:03,844 DEBUG BookingBaseSteps - This item was found on the page: currencySelection_XPATH.
+2020-06-19 04:47:03,891 DEBUG BookingBaseSteps - This item was found on the page: languageSelection_XPATH.
+2020-06-19 04:47:03,938 DEBUG BookingBaseSteps - This item was found on the page: notifications_XPATH.
+2020-06-19 04:47:04,007 DEBUG BookingBaseSteps - This item was found on the page: customerSupportCenter_XPATH.
+2020-06-19 04:47:04,052 DEBUG BookingBaseSteps - This item was found on the page: buttonRegisterObject_ID.
+2020-06-19 04:47:14,077 DEBUG BookingBaseSteps - This item was not found on the page: buttonAccountCreate_ID.
+2020-06-19 04:47:14,118 DEBUG BookingBaseSteps - This item was found on the page: buttonCurrentAccount_ID.
+2020-06-19 04:47:14,159 DEBUG BookingBaseSteps - This item was found on the page: blueBannerSecond_ID.
+2020-06-19 04:47:14,202 DEBUG BookingBaseSteps - This item was found on the page: housingTab_XPATH.
+2020-06-19 04:47:14,244 DEBUG BookingBaseSteps - This item was found on the page: flightsTab_XPATH.
+2020-06-19 04:47:14,289 DEBUG BookingBaseSteps - This item was found on the page: carRentalTab_XPATH.
+2020-06-19 04:47:14,345 DEBUG BookingBaseSteps - This item was found on the page: leisureTab_XPATH.
+2020-06-19 04:47:14,387 DEBUG BookingBaseSteps - This item was found on the page: taxiTab_XPATH.
+2020-06-19 04:47:14,389  INFO BookingBaseSteps - Log out of the site account.
+2020-06-19 04:47:22,298  INFO BookingCityCucumberSteps - ---------------------------Test finished--------------------------
