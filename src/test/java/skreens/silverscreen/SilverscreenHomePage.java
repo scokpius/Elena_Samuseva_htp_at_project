@@ -91,5 +91,5 @@ public class SilverscreenHomePage extends AbstractPage {
         LOGGER.debug("log out of account.(buttonExit_CSS)");
         actions.moveToElement(buttonExit_CSS).sendKeys(Keys.ENTER).build().perform();
     }
-    
+
 }

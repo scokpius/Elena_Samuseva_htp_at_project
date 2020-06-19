@@ -1,4 +1,4 @@
-package steps.cucumber.booking;
+package steps.cucumber.base_steps;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -7,7 +7,7 @@ import drivers.Driver;
 
 import java.io.IOException;
 
-public class BookingBaseCucumberSteps {
+public class CucumberBaseSteps {
     @Before
     public void initDriver() throws IOException {
         Driver.initDriver(ConfigDriver.CHROME);

@@ -10,9 +10,9 @@ public class runner {
     static JsonParser jsonParser = new JsonParser();
 
     public static void main(String[] args) throws IOException, SAXException, URISyntaxException {
-        jsonParser.parserJSON();
-        jsonParser.parseGSON();
-        jsonParser.parseJackson();
+//        jsonParser.parserJSON();
+//        jsonParser.parseGSON();
+//        jsonParser.parseJackson();
         jsonParser.fromGSON();
 
     }
