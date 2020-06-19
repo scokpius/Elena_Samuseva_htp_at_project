@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 
 public class JsonParser {
 //    private final static String JSON = "D:\\students\\Samuseva\\Elena_Samuseva_htp_at_project\\src\\test\\java\\test_data\\recept.json";
-    private final static String JSON = "c:\\students\\Elena_Samuseva_htp_at_project\\src\\test\\java\\classwork\\test_data\\recept.json";
+    private final static String JSON = "c:\\students\\Elena_Samuseva_htp_at_project\\src\\test\\java\\classwork\\test_data\\  recept.json";
     private final static String JSON1 = "D:\\students\\Samuseva\\Elena_Samuseva_htp_at_project\\src\\test\\java\\test_data\\recept1.json";
 
     File file = new File(JSON);

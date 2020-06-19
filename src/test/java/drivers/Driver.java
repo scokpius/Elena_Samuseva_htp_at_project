@@ -47,9 +47,9 @@ public class Driver {
     }
 
     public static void setTimeouts() {
-        driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.get().manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
-        driver.get().manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
+        driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get().manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.get().manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
     }
 
     public static void removeTimeouts() {

@@ -34,7 +34,7 @@ public class MyHttpClient {
     }
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        Search search = new Search("a",true);
+        Search search = new Search("a", false);
         search(search);
     }
 }
